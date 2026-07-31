@@ -1,0 +1,6 @@
+rubric: user-acceptance
+version: 0.1.0
+dimensions:
+  - name: usefulness
+    anchors: {1: unusable, 3: usable_with_edits, 5: ready_for_intended_use}
+decision_owner: <role>

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "status",
+    "case_results",
+    "aggregate_results",
+    "vetoes"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "Pass",
+        "Fail",
+        "Not Ready",
+        "Execution Error"
+      ]
+    },
+    "case_results": {
+      "type": "array"
+    },
+    "aggregate_results": {
+      "type": "object"
+    },
+    "vetoes": {
+      "type": "array"
+    }
+  }
+}

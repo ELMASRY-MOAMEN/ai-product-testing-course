@@ -1,0 +1,12 @@
+case_id: CASE-001
+input:
+  prompt: "<predefined input>"
+context:
+  permitted_evidence: {}
+reference:
+  required_facts: []
+  forbidden_claims: []
+slices: []
+criticality: normal
+eligibility: true
+annotation_status: draft

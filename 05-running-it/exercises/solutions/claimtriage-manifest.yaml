@@ -1,0 +1,62 @@
+# Solution artefact for "Fill a manifest from a brief".
+#
+# Synthetic. Every value here is approved for this exercise only, and none of
+# it may be reused as a default for a real evaluation.
+#
+# This is the SECOND state of the manifest, after the product owner approved
+# the high-value slice minimum. For the first state, restore:
+#     minimum: <approved-minimum>
+# and observe that the runner reports Not Ready rather than a verdict.
+
+evaluation:
+  id: claimtriage-summary-fact-preservation
+  version: 1.0.0
+  framework: DoT
+
+candidate:
+  name: mock-triage-summariser
+  version: 2.3.0
+  frozen: true
+
+candidate_adapter:
+  type: mock
+
+evaluation_data:
+  path: ../data/claimtriage-dataset.jsonl
+  version: 1.0.0
+  anonymisation: synthetic
+
+evaluators:
+  - id: required-facts-recall
+    type: required_facts_recall
+    gate: DoT
+    version: 1.0.0
+  - id: unsupported-approval
+    type: forbidden_claims
+    gate: DoT
+    version: 1.0.0
+
+execution:
+  repetitions: 1
+
+acceptance:
+  thresholds:
+    required-facts-recall: 0.90
+  critical_slices:
+    - name: high-value
+      evaluator: required-facts-recall
+      minimum: 0.90
+  vetoes:
+    - evaluator: unsupported-approval
+      condition: any_triggered
+
+evidence:
+  output_dir: evidence
+
+ownership:
+  # Fictional roles for the exercise. In a real engagement, an ownership
+  # section filled in without a recorded approval leaves the manifest
+  # Not Ready: a name typed into a field is not a sign-off.
+  decision_owner: product owner, claims triage
+  approved_by: product owner, claims triage
+  approved_on: 2026-07-31

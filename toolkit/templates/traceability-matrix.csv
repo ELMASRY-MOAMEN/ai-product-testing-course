@@ -1,0 +1,7 @@
+requirement,risk,criterion,scenario,case,evaluator,gate,owner
+Only entitled callers see a record,Cross-account data exposure,Unauthorized caller receives a refusal and no record content,SC-ACC-01,ACC-001..040,deterministic assertion,DoD,Security lead
+Response follows the approved schema,Downstream integration breaks silently,Payload validates against schema v3,SC-SCH-01,SCH-001..025,schema conformance,DoD,Engineering lead
+Summaries preserve mandatory sections,Relationship manager acts on an incomplete brief,Section recall meets <approved-threshold>,SC-REC-01,MR-001..240,required-elements recall,DoT,Product owner
+Summaries invent no attribution,A decision is attributed to someone who did not make it,No unsupported attribution in any case,SC-VET-01,MR-001..240,groundedness plus veto,DoT,Product owner
+Regulated clients are handled correctly,Regulatory exposure concentrated in one segment,Regulated slice meets <approved-minimum>,SC-REC-01,MR-013..020,required-elements recall,DoT,Compliance
+Output is usable to prepare a call,Time lost re-reading the source,Sampled rubric reaches <approved-level>,SC-UAT-01,Sample of 40,human rubric,UAT,Relationship-management lead

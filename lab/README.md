@@ -1,0 +1,37 @@
+# The lab
+
+The evaluation runner used by the exercises. It is a self-contained copy of the `run-product-evaluation` skill from the companion repository, vendored here so the course works offline with no installation.
+
+## Running an evaluation
+
+```bash
+python lab/run-product-evaluation/scripts/run_evaluation.py <path-to-manifest.yaml>
+```
+
+Paths inside a manifest — `evaluation_data.path`, `evidence.output_dir` — are relative to the **manifest**, not to where you run the command.
+
+## What it will do
+
+- Refuse to run and report `Not Ready`, listing every unresolved placeholder and every control that names something undeclared.
+- Execute the cases, score them with the declared evaluators, aggregate globally and per slice, and apply vetoes independently.
+- Write case-level evidence into the manifest's `evidence.output_dir`.
+
+## What it will not do
+
+- Invent an acceptance policy, approve its own evaluator, waive a critical failure, accept residual risk, or make a release decision.
+
+That boundary is the subject of [module 06](../06-governance/README.md), and it is enforced in code, not by convention.
+
+## The evaluators available
+
+Listed in `run-product-evaluation/scripts/evaluators.py`. A manifest naming a type the registry does not have is blocked **before** the run, not part-way through it — a manifest that promises a measurement nothing can make must not produce a partial report.
+
+## Adapters
+
+`run-product-evaluation/adapters/` holds the interface between the runner and a candidate. The exercises use the **mock** adapter: each dataset case carries its own `mock_answer`, so runs are deterministic, offline, and free.
+
+Evaluating a real product means writing an adapter for it. That is engineering work, and it is out of scope for this course.
+
+---
+
+[Course map](../00-orientation/progression.md)

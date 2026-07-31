@@ -1,0 +1,23 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+.env
+
+# Run outputs. The runner writes report.json and report.md into the evidence
+# directory the manifest declares; those are artefacts of a run, not sources.
+evidence/
+
+# Learner work. Your capstone submission and exercise attempts stay yours:
+# nothing here is meant to be pushed back to this repository.
+my-work/
+
+# Obsidian
+# The shared vault configuration IS versioned (app.json, appearance.json,
+# core-plugins.json) so that anyone cloning inherits the linking conventions.
+# Only local interface state is ignored.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+.trash/

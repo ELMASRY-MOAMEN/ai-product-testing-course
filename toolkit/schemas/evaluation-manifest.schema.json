@@ -1,0 +1,182 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evaluation manifest",
+  "description": "The structural contract for an evaluation manifest, and the one validate_manifest.py enforces. It is not documentation sitting alongside a separate implementation. Structure only: it says nothing about whether the declared values were approved, which is readiness.",
+  "type": "object",
+  "required": [
+    "evaluation",
+    "candidate",
+    "candidate_adapter",
+    "evaluation_data",
+    "evaluators",
+    "acceptance",
+    "evidence",
+    "ownership"
+  ],
+  "properties": {
+    "evaluation": {
+      "type": "object",
+      "required": [
+        "id",
+        "version",
+        "framework"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "version": {},
+        "framework": {}
+      }
+    },
+    "candidate": {
+      "type": "object",
+      "required": [
+        "name",
+        "version"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {},
+        "frozen": {
+          "type": "boolean"
+        }
+      }
+    },
+    "candidate_adapter": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        }
+      }
+    },
+    "evaluation_data": {
+      "type": "object",
+      "required": [
+        "path",
+        "version"
+      ],
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "version": {},
+        "anonymisation": {}
+      }
+    },
+    "evaluators": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "gate"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "gate": {
+            "description": "DoD asserts, DoT measures. Required rather than defaulted: a silent default on a gate decision surfaces later as 'no approved threshold declared', which points at the wrong thing. An angle-bracketed placeholder is structurally valid and still Not Ready, which is how a template stays checkable.",
+            "anyOf": [
+              {
+                "enum": [
+                  "DoD",
+                  "DoT"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^<.*>$"
+              }
+            ]
+          },
+          "version": {}
+        }
+      }
+    },
+    "execution": {
+      "type": "object"
+    },
+    "acceptance": {
+      "type": "object",
+      "required": [
+        "thresholds",
+        "critical_slices",
+        "vetoes"
+      ],
+      "properties": {
+        "thresholds": {
+          "type": "object"
+        },
+        "critical_slices": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "evaluator": {
+                "type": "string"
+              },
+              "minimum": {}
+            }
+          }
+        },
+        "vetoes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "evaluator"
+            ],
+            "properties": {
+              "evaluator": {
+                "type": "string"
+              },
+              "condition": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "required": [
+        "output_dir"
+      ],
+      "properties": {
+        "output_dir": {
+          "type": "string"
+        }
+      }
+    },
+    "ownership": {
+      "type": "object",
+      "required": [
+        "decision_owner"
+      ],
+      "properties": {
+        "decision_owner": {},
+        "approved_by": {},
+        "approved_on": {}
+      }
+    }
+  }
+}

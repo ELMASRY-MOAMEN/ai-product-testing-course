@@ -1,0 +1,67 @@
+# Synthetic. The candidate is a mock and the values below are approved for
+# this example only. They demonstrate the shape of an approved manifest and
+# must never be reused as defaults for a real evaluation.
+
+evaluation:
+  id: hr-handbook-assistant-retrieval
+  version: 1.0.0
+  framework: DoT
+
+candidate:
+  name: mock-rag-assistant
+  version: 1.0.0
+  frozen: true
+
+candidate_adapter:
+  type: mock
+
+evaluation_data:
+  path: dataset.jsonl
+  version: 1.0.0
+  anonymisation: synthetic
+
+evaluators:
+  - id: retrieval-recall
+    type: retrieval_recall
+    gate: DoT
+    version: 1.0.0
+  - id: answer-facts-recall
+    type: required_facts_recall
+    gate: DoT
+    version: 1.0.0
+  - id: citation-support
+    type: citation_support
+    gate: DoT
+    version: 1.0.0
+
+execution:
+  repetitions: 1
+
+acceptance:
+  thresholds:
+    retrieval-recall: 0.85
+    answer-facts-recall: 0.85
+  critical_slices:
+    - name: policy-change
+      evaluator: retrieval-recall
+      minimum: 0.85
+    - name: multi-source
+      evaluator: retrieval-recall
+      minimum: 0.85
+  vetoes:
+    - evaluator: citation-support
+      condition: any_triggered
+
+evidence:
+  output_dir: evidence
+
+ownership:
+  # Fictional, and the reason it is stated here rather than in a header comment:
+  # an agent following this example filled these fields with a plausible role
+  # name and shipped a runnable manifest, citing this file as precedent. In a
+  # real engagement, an ownership section completed without a recorded approval
+  # leaves the manifest Not Ready — a name typed into a field is not a sign-off,
+  # and inferring one is the invention every rule here forbids.
+  decision_owner: product owner, HR handbook assistant
+  approved_by: product owner, HR handbook assistant
+  approved_on: 2026-07-29

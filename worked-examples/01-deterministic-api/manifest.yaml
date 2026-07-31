@@ -1,0 +1,56 @@
+# Synthetic. A DoD-only evaluation: every evaluator asserts, none measures.
+#
+# There is no `thresholds` entry and that is correct, not an omission. An
+# assertion carries no threshold because there is nothing to average — a
+# schema conforms or it does not. Readiness only requires an approved
+# threshold when a DoT evaluator is declared.
+
+evaluation:
+  id: report-api-conformance
+  version: 1.0.0
+  framework: DoD
+
+candidate:
+  name: mock-report-api
+  version: 1.0.0
+  frozen: true
+
+candidate_adapter:
+  type: mock
+
+evaluation_data:
+  path: dataset.jsonl
+  version: 1.0.0
+  anonymisation: synthetic
+
+evaluators:
+  - id: response-schema
+    type: schema_conformance
+    gate: DoD
+    version: 1.0.0
+  - id: audit-event
+    type: tool_call_conformance
+    gate: DoD
+    version: 1.0.0
+
+execution:
+  repetitions: 1
+
+acceptance:
+  thresholds: {}
+  critical_slices: []
+  vetoes: []
+
+evidence:
+  output_dir: evidence
+
+ownership:
+  # Fictional, and the reason it is stated here rather than in a header comment:
+  # an agent following this example filled these fields with a plausible role
+  # name and shipped a runnable manifest, citing this file as precedent. In a
+  # real engagement, an ownership section completed without a recorded approval
+  # leaves the manifest Not Ready — a name typed into a field is not a sign-off,
+  # and inferring one is the invention every rule here forbids.
+  decision_owner: engineering lead, report API
+  approved_by: engineering lead, report API
+  approved_on: 2026-07-29

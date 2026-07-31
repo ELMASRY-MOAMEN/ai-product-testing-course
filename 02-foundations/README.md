@@ -1,0 +1,37 @@
+---
+type: moc
+status: reviewed
+audience: [qa, product-owner, engineering]
+---
+
+# Module 02 — Foundations
+
+**Objective:** classify any observable behaviour, and know which gate it belongs behind.
+
+Everything downstream depends on this. A behaviour put behind the wrong gate produces evidence that looks complete and proves the wrong thing.
+
+## Notes, in order
+
+| # | Note | Answers |
+|:--:|---|---|
+| 1 | [Why AI products need a different testing approach](testing-foundations.md) | Why exact-match assertions stop working |
+| 2 | [One product can contain three types of behaviour](output-classification.md) | How to classify — **two** questions, not one |
+| 3 | [The Hybrid validation model](dod-dot-hybrid.md) | How the gates combine, and what the acceptance rule is |
+
+## Exercise
+
+[Classify five behaviours](exercises/classify-five-behaviours.md) — then compare with [the solution](exercises/solutions/classify-five-behaviours.md).
+
+## Read alongside
+
+[Worked example 04 — Hybrid agent](../worked-examples/04-hybrid-agent/README.md). It decomposes one capability into deterministic and probabilistic behaviours, which is exactly what the exercise asks you to do.
+
+## Mastery criterion
+
+Given five behaviours drawn from a real product, you classify each one and **justify it with question 2** — is the correct output specified, or did somebody have to annotate it? — getting the two genuinely ambiguous ones right.
+
+If you cannot, reread [note 2](output-classification.md), specifically *Two questions, not one* and *Why classification appears in the probabilistic row*.
+
+---
+
+[Course map](../00-orientation/progression.md) · Start the module: [Why AI products need a different testing approach](testing-foundations.md)

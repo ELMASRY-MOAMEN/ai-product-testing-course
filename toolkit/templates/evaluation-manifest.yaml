@@ -1,0 +1,55 @@
+# Evaluation manifest template.
+#
+# Every angle-bracketed value is an unresolved decision. The manifest is
+# structurally valid as it stands, and the runner will still report Not Ready
+# until each one is replaced by an approved value. That is deliberate: filling
+# a placeholder to make the run proceed converts a missing decision into
+# evidence that was never approved.
+
+evaluation:
+  id: <evaluation-id>
+  version: <evaluation-version>
+  framework: <DoD | DoT | Hybrid>
+
+candidate:
+  name: <candidate-name>
+  version: <candidate-version>
+  frozen: false          # must be true before the run
+
+candidate_adapter:
+  type: <adapter-type>
+
+evaluation_data:
+  path: <dataset-file>
+  version: <dataset-version>
+  # anonymised | pseudonymised | synthetic | raw-approved
+  # A dataset whose status is undeclared is not eligible for a run.
+  anonymisation: <anonymisation-status>
+
+evaluators:
+  - id: <evaluator-id>
+    type: <evaluator-type>
+    gate: <DoD | DoT>
+    version: <evaluator-version>
+
+execution:
+  repetitions: 1
+
+acceptance:
+  thresholds:
+    <evaluator-id>: <approved-threshold>
+  critical_slices:
+    - name: <slice-name>
+      evaluator: <evaluator-id>
+      minimum: <approved-minimum>
+  vetoes:
+    - evaluator: <evaluator-id>
+      condition: any_triggered
+
+evidence:
+  output_dir: <evidence-directory>
+
+ownership:
+  decision_owner: <role accountable for acceptance>
+  approved_by: <role that approved the thresholds>
+  approved_on: <date>

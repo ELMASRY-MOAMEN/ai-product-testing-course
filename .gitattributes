@@ -1,0 +1,8 @@
+# Normalise les fins de ligne en LF dans le dépôt, quel que soit l'OS du contributeur.
+* text=auto eol=lf
+
+# Binaires : aucune conversion.
+*.zip   binary
+*.png   binary
+*.jpg   binary
+*.pdf   binary

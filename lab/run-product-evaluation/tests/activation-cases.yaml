@@ -1,0 +1,39 @@
+# Routing cases for run-product-evaluation.
+#
+# should_activate: true   this skill owns the prompt
+# should_activate: false  another skill owns it; expected_skill names which
+cases:
+  - prompt: Execute the approved manifest
+    should_activate: true
+
+  - prompt: Run this evaluation against the candidate and give me the report
+    should_activate: true
+
+  - prompt: Why did this run come back Not Ready?
+    should_activate: true
+
+  - prompt: Compare this candidate with the accepted baseline
+    should_activate: true
+
+  - prompt: Draft the evaluation manifest with metrics and thresholds
+    should_activate: false
+    expected_skill: design-ai-evaluation
+    reason: This skill executes an approved manifest; it never authors one.
+
+  - prompt: Set a threshold for this metric
+    should_activate: false
+    reason: >
+      No skill sets a threshold. Report the missing approval and name its owner.
+      Supplying a value here would turn a missing decision into evidence.
+
+  - prompt: Classify this feature and identify its risks
+    should_activate: false
+    expected_skill: prepare-ai-testing-session
+
+  - prompt: Build the cases this run will execute
+    should_activate: false
+    expected_skill: build-golden-dataset
+
+  - prompt: Review whether this run was governed properly
+    should_activate: false
+    expected_skill: audit-ai-evaluation

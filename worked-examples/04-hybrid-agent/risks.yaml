@@ -1,0 +1,44 @@
+# Risks for the HR agent, elicited by walking the employee's workflow.
+#
+# Each states what goes wrong, to whom, and what it costs. A risk that cannot
+# answer those three is a category, not a risk, and gets no slice.
+risks:
+  - risk: The agent opens a ticket the employee did not request
+    who: The employee, and the HR team receiving noise
+    cost: An action taken on someone's behalf without their intent; erodes trust in the agent permanently
+    gate: DoD
+    control: tool-call assertion, both directions
+    veto_candidate: true
+
+  - risk: A ticket is raised but no reference is returned
+    who: The employee
+    cost: No way to follow up; the request is invisible to them and looks lost
+    gate: DoD
+    control: schema assertion on the response
+
+  - risk: A conduct report is routed as a normal-priority ticket
+    who: The employee reporting, and the organisation
+    cost: Delayed handling of a matter with legal and duty-of-care exposure
+    gate: DoD
+    control: tool-call assertion on category and priority
+
+  - risk: The answer omits a condition that changes the employee's decision
+    who: The employee
+    cost: Acts on an incomplete entitlement; discovers the condition too late
+    gate: DoT
+    control: required-fact recall, measured over the population
+
+  - risk: The agent states an entitlement the handbook does not support
+    who: The employee, and HR when the claim is quoted back
+    cost: A commitment nobody made; one occurrence is enough
+    gate: DoT
+    control: unsupported-claim veto
+
+  - risk: Employees phrase requests differently across countries and the agent behaves inconsistently
+    who: Employees outside the majority language
+    cost: Unknown — nobody present could size it
+    gate: open
+    control: none yet
+    status: >
+      Recorded open, owner HR legal. Not sized, so no slice is allocated to it.
+      A risk nobody can size is a decision waiting, not a risk to discard.

@@ -1,0 +1,62 @@
+# Synthetic example. The candidate is a mock, and the values below are
+# approved for this example only — they illustrate the shape of an approved
+# manifest and must never be reused as defaults for a real evaluation.
+
+evaluation:
+  id: meeting-report-fact-preservation
+  version: 1.0.0
+  framework: DoT
+
+candidate:
+  name: mock-summariser
+  version: 1.0.0
+  frozen: true
+
+candidate_adapter:
+  type: mock
+
+evaluation_data:
+  path: dataset.jsonl
+  version: 1.0.0
+  anonymisation: synthetic
+
+evaluators:
+  - id: required-facts-recall
+    type: required_facts_recall
+    gate: DoT
+    version: 1.0.0
+  - id: unsupported-claim
+    type: forbidden_claims
+    gate: DoT
+    version: 1.0.0
+
+execution:
+  repetitions: 1
+
+acceptance:
+  thresholds:
+    required-facts-recall: 0.85
+  critical_slices:
+    - name: regulated
+      evaluator: required-facts-recall
+      minimum: 0.90
+    - name: second-language
+      evaluator: required-facts-recall
+      minimum: 0.85
+  vetoes:
+    - evaluator: unsupported-claim
+      condition: any_triggered
+
+evidence:
+  output_dir: evidence
+
+ownership:
+  # Fictional, and the reason it is stated here rather than in a header comment:
+  # an agent following this example filled these fields with a plausible role
+  # name and shipped a runnable manifest, citing this file as precedent. In a
+  # real engagement, an ownership section completed without a recorded approval
+  # leaves the manifest Not Ready — a name typed into a field is not a sign-off,
+  # and inferring one is the invention every rule here forbids.
+  decision_owner: product owner, meeting-report capability
+  approved_by: product owner, meeting-report capability
+  approved_on: 2026-07-29
