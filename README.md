@@ -1,12 +1,25 @@
 # AI Product Testing — the course
 
+[![validate](https://github.com/ELMASRY-MOAMEN/ai-product-testing-course/actions/workflows/validate.yml/badge.svg)](https://github.com/ELMASRY-MOAMEN/ai-product-testing-course/actions/workflows/validate.yml)
+
 **Learn to evaluate products that embed AI.** From your first failing run to a complete evaluation package you could hand to a decision owner.
 
-Seven modules, eight exercises with worked solutions, one capstone. Python 3.10, a terminal, and two pip packages.
+Seven modules, eight exercises with worked solutions, one capstone. Python 3.10, a terminal, and two pip packages — no model, no API key, no network.
 
-> **Fifteen minutes to decide whether this is for you:** do the [setup](00-orientation/prerequisites.md), then run [module 01](01-warm-up/run-your-first-evaluation.md). You will execute a real evaluation, watch it fail while every average passes, and understand why that failure is the point.
+## Start here
 
-From there, follow the `Next` link at the foot of each page. It runs to the capstone through every module and every exercise — there is nothing else to keep track of.
+```bash
+git clone https://github.com/ELMASRY-MOAMEN/ai-product-testing-course.git
+cd ai-product-testing-course
+pip install -r requirements.txt
+python lab/run-product-evaluation/scripts/run_evaluation.py worked-examples/02-llm-summary/manifest.yaml
+```
+
+That run reports **Fail** while every average passes its threshold. Fifteen minutes on [why that is the point](01-warm-up/run-your-first-evaluation.md) will tell you whether this course is for you.
+
+Then follow the **`Next`** link at the foot of each page. It runs from [the first page](00-orientation/how-to-use-this-course.md) to the capstone through every module and every exercise — there is nothing else to keep track of.
+
+*In a hurry, or coming back for something specific? [The course map](00-orientation/progression.md).*
 
 ## What you will be able to do
 
@@ -25,40 +38,37 @@ When several outputs are acceptable, exact comparison stops being a valid oracle
 
 That gate has a name here: the **Definition of Trustworthy (DoT)**. It sits beside the Definition of Done, which keeps doing its job on everything deterministic.
 
-## Start
-
-| You are | Go to |
-|---|---|
-| **Starting the course** | [How to use this course](00-orientation/how-to-use-this-course.md) — then just follow `Next` |
-| In a hurry, want to see it work first | [Setup](00-orientation/prerequisites.md), then [run your first evaluation](01-warm-up/run-your-first-evaluation.md) — 15 min |
-| Looking for a specific module | [The course map](00-orientation/progression.md) |
-| Already trained, here for the tools | [The toolkit](toolkit/README.md) |
-
-## What is in here
-
-| Folder | What it holds |
-|---|---|
-| `00-orientation/` | The map, the method, the prerequisites |
-| `01-warm-up/` | A real run, before any theory |
-| `02-foundations/` → `07-governance/` | The six teaching modules: notes, exercises, solutions |
-| `toolkit/` | Checklists, templates, policies and schemas you keep using afterwards |
-| `worked-examples/` | Four complete evaluations to read — [never to copy](worked-examples/READ-ME-BEFORE-COPYING.md) |
-| `capstone/` | Evaluate a capability of your own choosing, and be assessed on it |
-| `lab/` | The runner that executes the exercises |
-| `annexes/` | Out of scope for the course: skill authoring, and adopting the method in an organisation |
-
 ## Three rules that hold everywhere in this course
 
 1. **Never invent a threshold, a slice minimum, a veto condition, a reference answer or an approval.** Keep the placeholder, report `Not Ready`, and name the role that owns the decision.
 2. **Deterministic conformance and probabilistic quality are separate gates.** They combine; they never merge.
 3. **A good average never cancels a critical failure.**
 
+## What is in here
+
+You only ever need the first two rows. The rest is there when the course sends you to it.
+
+| Folder | What it holds |
+|---|---|
+| `00-orientation/` → `01-warm-up/` | Where you start: how to work through it, and a real run before any theory |
+| `02-foundations/` → `07-governance/` | The six teaching modules — notes, exercises, worked solutions |
+| `capstone/` | Evaluate a capability of your own choosing, and be assessed on it |
+| `toolkit/` | Checklists, templates, policies and schemas you keep using after the course |
+| `worked-examples/` | Four complete evaluations to read — [never to copy](worked-examples/READ-ME-BEFORE-COPYING.md) |
+| `lab/` | The evaluation runner the exercises execute |
+| `tools/` | The checks that keep this repository honest — links, reading path, documented figures |
+| `annexes/` | Deliberately out of scope: skill authoring, and adopting the method in an organisation |
+
 ## Scope
 
 This course teaches the **evaluation of products that embed AI**. It does not teach how to build models, and it does not benchmark them.
 
-## Status and licence
+## Status
 
 The methodology is proposed, for discussion and pilot application. It comes from the companion repository `ai-product-testing-skills`, which packages the same practices as skills for coding agents; this repository is the human path through them, and stands alone.
 
-MIT — see [LICENSE](LICENSE).
+Every documented figure in these pages is asserted by [a check that runs on each push](.github/workflows/validate.yml) — if a note says a run reports 0.960 and one veto, it still does.
+
+## Licence
+
+See [LICENSE](LICENSE).
