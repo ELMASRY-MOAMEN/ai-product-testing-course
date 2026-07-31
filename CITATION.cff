@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "AI Product Testing — the course"
+message: "If you use or adapt this material, please cite it and link to the canonical repository."
+type: software
+abstract: >-
+  A hands-on course on evaluating products that embed AI: seven modules, eight
+  exercises with worked solutions, and a capstone. Built around the Definition
+  of Trustworthy (DoT), the acceptance gate for behaviour where several outputs
+  are acceptable and exact comparison stops being a valid oracle.
+authors:
+  - family-names: Elmasry
+    given-names: Moamen
+repository-code: "https://github.com/ELMASRY-MOAMEN/ai-product-testing-course"
+url: "https://github.com/ELMASRY-MOAMEN/ai-product-testing-course"
+license: CC-BY-SA-4.0
+license-url: "https://github.com/ELMASRY-MOAMEN/ai-product-testing-course/blob/main/LICENSE"
+keywords:
+  - ai-testing
+  - llm-evaluation
+  - evaluation
+  - quality-assurance
+  - definition-of-trustworthy
+date-released: "2026-07-31"

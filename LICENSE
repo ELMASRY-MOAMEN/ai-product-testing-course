@@ -1,3 +1,26 @@
+This repository is licensed in two parts.
+
+────────────────────────────────────────────────────────────────────────────
+THE WRITTEN CONTENT — Creative Commons Attribution-ShareAlike 4.0
+────────────────────────────────────────────────────────────────────────────
+
+Every note, module, exercise, worked solution, template, checklist and policy
+document — everything that teaches — is licensed under CC BY-SA 4.0.
+
+You may share and adapt it, including commercially, provided you give credit
+and license your derivative under the same terms. See LICENSE-CONTENT.md.
+
+────────────────────────────────────────────────────────────────────────────
+THE CODE — MIT
+────────────────────────────────────────────────────────────────────────────
+
+Everything executable — tools/ and lab/ — is licensed under MIT, below.
+
+lab/run-product-evaluation/ is a vendored copy of a skill from the companion
+repository ai-product-testing-skills, which is MIT. It stays MIT here.
+
+────────────────────────────────────────────────────────────────────────────
+
 MIT License
 
 Copyright (c) 2026 Moamen Elmasry

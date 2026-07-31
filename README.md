@@ -71,4 +71,11 @@ Every documented figure in these pages is asserted by [a check that runs on each
 
 ## Licence
 
-See [LICENSE](LICENSE).
+Two parts, because they are two different things:
+
+| | |
+|---|---|
+| **The written content** — every note, exercise, solution, template and checklist | [CC BY-SA 4.0](LICENSE-CONTENT.md). Share it, translate it, run a paid course from it. Credit the source, and keep your version open under the same terms |
+| **The code** — `tools/` and `lab/` | [MIT](LICENSE) |
+
+The canonical repository is <https://github.com/ELMASRY-MOAMEN/ai-product-testing-course>; a copy elsewhere may be stale. To cite it, see [CITATION.cff](CITATION.cff).
