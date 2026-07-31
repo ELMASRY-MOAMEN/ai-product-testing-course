@@ -8,7 +8,7 @@ audience: [qa, product-owner, engineering, data-ai, compliance]
 
 Six modules, in order. Each one ends with an exercise and a mastery criterion you can check against yourself.
 
-**The `Next` link is the course.** It runs from [how to use this course](how-to-use-this-course.md) to the capstone and passes through every module opener and **every exercise** — 34 steps. Follow it and you cannot skip an exercise by accident. This page exists to jump around, not to make progress.
+**The `Next` link is the course.** It runs from [how to use this course](how-to-use-this-course.md) to the capstone and passes through every module opener and **every exercise** — 38 steps. Follow it and you cannot skip an exercise by accident. This page exists to jump around, not to make progress.
 
 **Time:** roughly eight to twelve hours of work, spread however you like. The capstone is extra, and it is the part that proves anything.
 
@@ -48,7 +48,7 @@ Six modules, in order. Each one ends with an exercise and a mastery criterion yo
 | 4 | [DoD: testing deterministic behaviour](../03-the-two-gates/definition-of-done.md) | What belongs in a Definition of Done, and how its gate runs |
 | 5 | [DoT: evaluating probabilistic quality](../03-the-two-gates/definition-of-trustworthy.md) | What a Definition of Trustworthy proves, and its ten mandatory components |
 
-**Exercise:** [Score a DoT against its ten components](../03-the-two-gates/exercises/score-a-dot-against-its-ten-components.md)
+**Exercises:** [Run a DoD gate](../03-the-two-gates/exercises/run-a-dod-gate.md) · [Score a DoT against its ten components](../03-the-two-gates/exercises/score-a-dot-against-its-ten-components.md)
 
 ## Module 04 — [Designing the evidence](../04-designing-evidence/README.md)
 
@@ -57,13 +57,15 @@ Six modules, in order. Each one ends with an exercise and a mastery criterion yo
 | # | Note | Answers |
 |:--:|---|---|
 | 6 | [What exactly should we evaluate](../04-designing-evidence/evaluators-and-metrics.md) | Which evaluation families exist, and how to pick the simplest valid evaluator |
-| 7 | [From a business requirement to executable evidence](../04-designing-evidence/requirement-to-evidence.md) | A worked example, end to end |
-| 8 | [Building a Golden Dataset](../04-designing-evidence/golden-datasets.md) | What a governed evaluation set contains, and how it lives |
-| 9 | [Protecting evaluation data](../04-designing-evidence/data-protection.md) | Which decisions must be taken before the data exists, and who owns them |
-| 10 | [Thresholds, slices and vetoes](../04-designing-evidence/thresholds-slices-vetoes.md) | How acceptance is decided, and what overrides an average |
-| 11 | [AI-as-a-judge: useful, but not an oracle](../04-designing-evidence/ai-judge-calibration.md) | When an LLM may score outputs, and under which controls |
+| 7 | [Does the metric measure the thing](../04-designing-evidence/does-the-metric-measure-it.md) | Whether your metric measures the property or something correlated with it |
+| 8 | [From a business requirement to executable evidence](../04-designing-evidence/requirement-to-evidence.md) | A worked example, end to end |
+| 9 | [Building a Golden Dataset](../04-designing-evidence/golden-datasets.md) | What a governed evaluation set contains, and how it lives |
+| 10 | [Protecting evaluation data](../04-designing-evidence/data-protection.md) | Which decisions must be taken before the data exists, and who owns them |
+| 11 | [Thresholds, slices and vetoes](../04-designing-evidence/thresholds-slices-vetoes.md) | How acceptance is decided, and what overrides an average |
+| 12 | [How many cases is enough](../04-designing-evidence/how-many-cases-is-enough.md) | What a slice population lets you conclude, and what it does not |
+| 13 | [AI-as-a-judge: useful, but not an oracle](../04-designing-evidence/ai-judge-calibration.md) | When an LLM may score outputs, and under which controls |
 
-**Exercises:** [Write a veto an average hides](../04-designing-evidence/exercises/write-a-veto-an-average-hides.md) · [Build a golden set](../04-designing-evidence/exercises/build-a-golden-set.md)
+**Exercises:** [Write a veto an average hides](../04-designing-evidence/exercises/write-a-veto-an-average-hides.md) · [Calibrate a judge](../04-designing-evidence/exercises/calibrate-a-judge.md) · [Build a golden set](../04-designing-evidence/exercises/build-a-golden-set.md)
 
 ## Module 05 — [Running it](../05-running-it/README.md)
 
@@ -71,9 +73,9 @@ Six modules, in order. Each one ends with an exercise and a mastery criterion yo
 
 | # | Note | Answers |
 |:--:|---|---|
-| 12 | [End-to-end methodology](../05-running-it/end-to-end-methodology.md) | The seven steps, in execution order |
-| 13 | [Minimum execution manifest](../05-running-it/evaluation-manifest.md) | What an approved run declares before it starts |
-| 14 | [What the automated evaluation runner should produce](../05-running-it/reporting-and-evidence.md) | Which evidence must survive the run |
+| 14 | [End-to-end methodology](../05-running-it/end-to-end-methodology.md) | The seven steps, in execution order |
+| 15 | [Minimum execution manifest](../05-running-it/evaluation-manifest.md) | What an approved run declares before it starts |
+| 16 | [What the automated evaluation runner should produce](../05-running-it/reporting-and-evidence.md) | Which evidence must survive the run |
 
 **Exercise:** [Fill a manifest from a brief](../05-running-it/exercises/fill-a-manifest-from-a-brief.md)
 
@@ -83,10 +85,10 @@ Six modules, in order. Each one ends with an exercise and a mastery criterion yo
 
 | # | Note | Answers |
 |:--:|---|---|
-| 15 | [Roles and human gates](../06-governance/roles-and-human-gates.md) | Who decides what, and where automation stops |
-| 16 | [Decisions required from the group](../06-governance/decisions-required.md) | What must be agreed before adoption |
-| 17 | [Pilot proposal](../06-governance/pilot-proposal.md) | How to try the methodology on one real capability |
-| 18 | [The methodology in five rules](../06-governance/five-rules-recap.md) | The whole thing, compressed |
+| 17 | [Roles and human gates](../06-governance/roles-and-human-gates.md) | Who decides what, and where automation stops |
+| 18 | [Decisions required from the group](../06-governance/decisions-required.md) | What must be agreed before adoption |
+| 19 | [Pilot proposal](../06-governance/pilot-proposal.md) | How to try the methodology on one real capability |
+| 20 | [The methodology in five rules](../06-governance/five-rules-recap.md) | The whole thing, compressed |
 
 **Exercise:** [Name the decision owner](../06-governance/exercises/name-the-decision-owner.md)
 

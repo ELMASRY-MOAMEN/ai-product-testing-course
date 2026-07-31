@@ -63,7 +63,9 @@ Two things to notice.
 
 A slice below its minimum must be reported as **not concluded**, never as passed. Six cases out of six passing is not evidence that a subgroup is safe, and a report that shows `1.00` for a six-case slice will be read as if it were.
 
-The minimum population per slice is a decision for the product owner with data/AI. I would propose these and mark them `<pending-approval>`.
+**Where the numbers come from.** Per [how many cases is enough](../../how-many-cases-is-enough.md): a clean slice of 25 puts the ceiling on the failure rate at roughly 11%, and 20 at roughly 14%. So these floors say *we can detect a failure rate above about one in eight, and no better*. Whether that is sufficient for vulnerable clients is not mine to decide — if Compliance says a 5% failure rate would be unacceptable there, the floor moves to about 60 cases and the annotation budget has to move with it.
+
+I propose the minimums with that reasoning attached and mark them `<pending-approval>`. The arithmetic is mine; the acceptable rate it is derived from is the product owner's, with Compliance.
 
 ### Handling status
 

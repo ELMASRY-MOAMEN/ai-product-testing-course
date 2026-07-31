@@ -17,6 +17,15 @@ Every component is either **resolved** — with the record it came from — or *
 
 **Is the evaluation question singular?** If you needed "and" to write it, split it or say which part this evaluation does not cover.
 
+## What the metric cannot see
+
+The *Metric* component is not complete until this is filled in. Every metric has a boundary; a design that appears not to have one has not looked.
+
+| Metric | What it measures | What it is blind to | How I checked |
+|---|---|---|---|
+
+**How I checked** is a real answer: *scored 15 cases by hand against the requirement and compared*. "It seemed reasonable" is not one.
+
 ## Instrument fit
 
 For each risk, the instrument that can see it, and what that instrument cannot see.

@@ -64,4 +64,4 @@ For each veto, also state in one line **the condition a deterministic check coul
 
 ---
 
-Previous: [Thresholds, slices and vetoes](../thresholds-slices-vetoes.md) · [Course map](../../00-orientation/progression.md) · Next: [AI-as-a-judge: useful, but not an oracle](../ai-judge-calibration.md)
+Previous: [Thresholds, slices and vetoes](../thresholds-slices-vetoes.md) · [Course map](../../00-orientation/progression.md) · Next: [How many cases is enough](../how-many-cases-is-enough.md)

@@ -69,4 +69,4 @@ Examples:
 
 ---
 
-Previous: [Module 04 — Designing the evidence](README.md) · [Course map](../00-orientation/progression.md) · Next: [From a business requirement to executable evidence](requirement-to-evidence.md)
+Previous: [Module 04 — Designing the evidence](README.md) · [Course map](../00-orientation/progression.md) · Next: [Does the metric measure the thing](does-the-metric-measure-it.md)

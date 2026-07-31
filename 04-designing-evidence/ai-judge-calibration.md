@@ -41,4 +41,4 @@ sequenceDiagram
 
 ---
 
-Previous: [Exercise — Write a veto an average hides](exercises/write-a-veto-an-average-hides.md) · [Course map](../00-orientation/progression.md) · Next: [Exercise — Build a golden set](exercises/build-a-golden-set.md)
+Previous: [How many cases is enough](how-many-cases-is-enough.md) · [Course map](../00-orientation/progression.md) · Next: [Exercise — Calibrate a judge](exercises/calibrate-a-judge.md)

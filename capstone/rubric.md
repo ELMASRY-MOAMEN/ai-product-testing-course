@@ -27,7 +27,7 @@ Eight criteria, scored 0 to 3. **24 points total; 18 is competent; below 12 mean
 
 | | |
 |:--:|---|
-| **3** | All ten addressed. Each is resolved with its source, or open with a named owner. The evaluation question is **singular**. |
+| **3** | All ten addressed. Each is resolved with its source, or open with a named owner. The evaluation question is **singular**, and the *Metric* component states what the metric is **blind to** as well as how it is computed. |
 | **2** | All ten addressed; one or two treated superficially. |
 | **1** | Components missing without acknowledgement. |
 | **0** | A design that cannot say what it is measuring. |
@@ -48,6 +48,8 @@ Eight criteria, scored 0 to 3. **24 points total; 18 is competent; below 12 mean
 Note the specific failure at level 1 — **a veto wired to nothing** is the most frequently recurring defect in this material, and it survives review because the manifest reads correctly.
 
 **On minimum populations, and a limitation of the lab.** The manifest schema has no field for one, so the runner will report a three-case slice as satisfied with no marker. That is a gap in the tooling, not in your design: score C3 on what your **dataset specification** says, and record the gap in your decisions register. Do not lower your acceptance rule to whatever the tool happens to express — noticing that the instrument cannot carry the rule is the finding, and a submission that says so scores **3**.
+
+A minimum population scores **3** only if it has a **basis**: the failure rate its owner would find unacceptable, and the arithmetic from [how many cases is enough](../04-designing-evidence/how-many-cases-is-enough.md) that turns it into a number. A round figure with no reasoning behind it is a number you invented, and Override 1 applies to it like any other.
 
 ## C4 — Evaluation data
 

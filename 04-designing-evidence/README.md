@@ -15,18 +15,21 @@ This is the longest module and the one that carries the craft. Take it in two si
 | # | Note | Answers |
 |:--:|---|---|
 | 6 | [What exactly should we evaluate](evaluators-and-metrics.md) | Which evaluation families exist, and how to pick the simplest valid evaluator |
-| 7 | [From a business requirement to executable evidence](requirement-to-evidence.md) | A worked example, end to end |
-| 8 | [Building a Golden Dataset](golden-datasets.md) | What a governed evaluation set contains, and how it lives |
-| 9 | [Protecting evaluation data](data-protection.md) | Which decisions must be taken before the data exists, and who owns them |
-| 10 | [Thresholds, slices and vetoes](thresholds-slices-vetoes.md) | How acceptance is decided, and what overrides an average |
-| 11 | [AI-as-a-judge: useful, but not an oracle](ai-judge-calibration.md) | When an LLM may score outputs, and under which controls |
+| 7 | [Does the metric measure the thing](does-the-metric-measure-it.md) | Whether your metric measures the property or something correlated with it |
+| 8 | [From a business requirement to executable evidence](requirement-to-evidence.md) | A worked example, end to end |
+| 9 | [Building a Golden Dataset](golden-datasets.md) | What a governed evaluation set contains, and how it lives |
+| 10 | [Protecting evaluation data](data-protection.md) | Which decisions must be taken before the data exists, and who owns them |
+| 11 | [Thresholds, slices and vetoes](thresholds-slices-vetoes.md) | How acceptance is decided, and what overrides an average |
+| 12 | [How many cases is enough](how-many-cases-is-enough.md) | What a slice population lets you conclude, and what it does not |
+| 13 | [AI-as-a-judge: useful, but not an oracle](ai-judge-calibration.md) | When an LLM may score outputs, and under which controls |
 
 ## Exercises
 
 | After note | Exercise | |
 |:--:|---|---|
-| 10 | [Write a veto an average hides](exercises/write-a-veto-an-average-hides.md) | [solution](exercises/solutions/write-a-veto-an-average-hides.md) |
-| 11 | [Build a golden set](exercises/build-a-golden-set.md) | [solution](exercises/solutions/build-a-golden-set.md) |
+| 11 | [Write a veto an average hides](exercises/write-a-veto-an-average-hides.md) | [solution](exercises/solutions/write-a-veto-an-average-hides.md) |
+| 13 | [Calibrate a judge](exercises/calibrate-a-judge.md) — bring a calculator | [solution](exercises/solutions/calibrate-a-judge.md) |
+| 13 | [Build a golden set](exercises/build-a-golden-set.md) | [solution](exercises/solutions/build-a-golden-set.md) |
 
 ## Read alongside
 
@@ -35,9 +38,11 @@ This is the longest module and the one that carries the craft. Take it in two si
 ## Mastery criteria
 
 1. Given a set of observed failures, you sort them into **degree** (threshold), **subgroup** (slice) and **kind** (veto) — and you can say what each instrument cannot see.
-2. You can specify a golden set — eligibility, slices, annotation status, handling — **without producing a single reference answer yourself**.
+2. For any metric you propose, you can state **what it is blind to**, and you would not report it without having checked it against human judgement on some cases.
+3. Asked "how many cases is enough?", you can compute the floor from the failure rate the owner says is unacceptable — and you know which questions you must hand to a statistician instead of answering.
+4. You can specify a golden set — eligibility, slices, annotation status, handling — **without producing a single reference answer yourself**.
 
-The second one has a trap built into it. Writing reference answers feels like doing the work; it is taking a decision that belongs to a business expert.
+The last one has a trap built into it. Writing reference answers feels like doing the work; it is taking a decision that belongs to a business expert.
 
 ---
 

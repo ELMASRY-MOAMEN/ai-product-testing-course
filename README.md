@@ -2,7 +2,7 @@
 
 **Learn to evaluate products that embed AI.** From your first failing run to a complete evaluation package you could hand to a decision owner.
 
-Six modules, six exercises with worked solutions, one capstone. Python 3.10, a terminal, and two pip packages.
+Six modules, eight exercises with worked solutions, one capstone. Python 3.10, a terminal, and two pip packages.
 
 > **Fifteen minutes to decide whether this is for you:** do the [setup](00-orientation/prerequisites.md), then run [module 01](01-warm-up/run-your-first-evaluation.md). You will execute a real evaluation, watch it fail while every average passes, and understand why that failure is the point.
 

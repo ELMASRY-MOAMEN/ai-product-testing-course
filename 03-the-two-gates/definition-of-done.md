@@ -82,4 +82,4 @@ Where the entitlement rule itself depends on personal data, the cases that test 
 
 ---
 
-Previous: [Module 03 — The two gates](README.md) · [Course map](../00-orientation/progression.md) · Next: [DoT: evaluating probabilistic quality](definition-of-trustworthy.md)
+Previous: [Module 03 — The two gates](README.md) · [Course map](../00-orientation/progression.md) · Next: [Exercise — Run a DoD gate](exercises/run-a-dod-gate.md)

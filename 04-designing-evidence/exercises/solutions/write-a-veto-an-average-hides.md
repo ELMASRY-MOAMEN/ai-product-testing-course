@@ -45,6 +45,8 @@ acceptance:
       minimum: <approved-minimum>          # owner: product owner
     # Both slices also need a declared minimum population; 11 vulnerable cases
     # in 200 may be too few to conclude from. Owner: product owner + data/AI.
+    # If you raised that on your own, good — the next note gives you the
+    # arithmetic behind it.
 
   vetoes:
     - evaluator: unauthorised-disclosure

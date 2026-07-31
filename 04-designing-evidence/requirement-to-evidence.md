@@ -93,4 +93,4 @@ The third answer introduces unsupported reasoning. An evaluator must distinguish
 
 ---
 
-Previous: [What exactly should we evaluate](evaluators-and-metrics.md) · [Course map](../00-orientation/progression.md) · Next: [Building a Golden Dataset](golden-datasets.md)
+Previous: [Does the metric measure the thing](does-the-metric-measure-it.md) · [Course map](../00-orientation/progression.md) · Next: [Building a Golden Dataset](golden-datasets.md)

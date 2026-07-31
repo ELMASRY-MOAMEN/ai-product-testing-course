@@ -60,4 +60,4 @@ The moment your skeletons contain plausible reference answers you wrote yourself
 
 ---
 
-Previous: [AI-as-a-judge: useful, but not an oracle](../ai-judge-calibration.md) · [Course map](../../00-orientation/progression.md) · Next: [Module 05 — Running it](../../05-running-it/README.md)
+Previous: [Exercise — Calibrate a judge](calibrate-a-judge.md) · [Course map](../../00-orientation/progression.md) · Next: [Module 05 — Running it](../../05-running-it/README.md)

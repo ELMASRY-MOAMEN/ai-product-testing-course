@@ -15,9 +15,14 @@ audience: [qa, product-owner, engineering, data-ai]
 | 4 | [DoD: testing deterministic behaviour](definition-of-done.md) | What belongs in a Definition of Done, and how its gate runs |
 | 5 | [DoT: evaluating probabilistic quality](definition-of-trustworthy.md) | What a Definition of Trustworthy proves, and its ten mandatory components |
 
-## Exercise
+## Exercises
 
-[Score a DoT against its ten components](exercises/score-a-dot-against-its-ten-components.md) — then compare with [the solution](exercises/solutions/score-a-dot-against-its-ten-components.md).
+One per gate, and the pair is the point — the same capability, two kinds of evidence, two kinds of verdict.
+
+| After note | Exercise | |
+|:--:|---|---|
+| 4 | [Run a DoD gate](exercises/run-a-dod-gate.md) — you will run this one | [solution](exercises/solutions/run-a-dod-gate.md) |
+| 5 | [Score a DoT against its ten components](exercises/score-a-dot-against-its-ten-components.md) | [solution](exercises/solutions/score-a-dot-against-its-ten-components.md) |
 
 ## Read alongside
 
@@ -25,11 +30,12 @@ audience: [qa, product-owner, engineering, data-ai]
 
 Both notes show Gherkin scenarios. The rules for writing them are in the toolkit — [scenario-writing rules](../toolkit/gherkin-and-test-contracts.md) — and you will want them for the capstone.
 
-## Mastery criterion
+## Mastery criteria
 
-Handed a real DoT design, you identify which of the ten mandatory components are missing and conclude **`Not Ready`** — without proposing values for them.
+1. You can build and run a **DoD gate** with no threshold in it, and say why `thresholds: {}` is the finished answer rather than an unfinished one.
+2. Handed a real DoT design, you identify which of the ten mandatory components are missing and conclude **`Not Ready`** — without proposing values for them.
 
-The tempting error is to notice the gap and immediately fill it, because a design with a hole feels unfinished. Naming the hole and its owner *is* the finished deliverable.
+The tempting error in the second is to notice the gap and immediately fill it, because a design with a hole feels unfinished. Naming the hole and its owner *is* the finished deliverable.
 
 ---
 
