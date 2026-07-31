@@ -36,4 +36,4 @@ flowchart LR
 
 ---
 
-Previous: [Pilot proposal](pilot-proposal.md) · [Course map](../00-orientation/progression.md) · Next: [Capstone: evaluate a capability of your own](../capstone/brief.md)
+Previous: [Pilot proposal](pilot-proposal.md) · [Course map](../00-orientation/progression.md) · Next: [Exercise — Name the decision owner](exercises/name-the-decision-owner.md)

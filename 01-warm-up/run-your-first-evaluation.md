@@ -67,4 +67,4 @@ Restore the value, and go to the debrief.
 
 ---
 
-[Course map](../00-orientation/progression.md) · Next: [What just happened](what-just-happened.md)
+Previous: [Prerequisites](../00-orientation/prerequisites.md) · [Course map](../00-orientation/progression.md) · Next: [What just happened](what-just-happened.md)

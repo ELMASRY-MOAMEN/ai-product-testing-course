@@ -2,9 +2,11 @@
 
 **Learn to evaluate products that embed AI.** From your first failing run to a complete evaluation package you could hand to a decision owner.
 
-Six modules, six exercises with worked solutions, one capstone. Python 3.10 and a terminal are the only prerequisites.
+Six modules, six exercises with worked solutions, one capstone. Python 3.10, a terminal, and two pip packages.
 
-> **Fifteen minutes to decide whether this is for you:** run [module 01](01-warm-up/run-your-first-evaluation.md). You will execute a real evaluation, watch it fail while every average passes, and understand why that failure is the point.
+> **Fifteen minutes to decide whether this is for you:** do the [setup](00-orientation/prerequisites.md), then run [module 01](01-warm-up/run-your-first-evaluation.md). You will execute a real evaluation, watch it fail while every average passes, and understand why that failure is the point.
+
+From there, follow the `Next` link at the foot of each page. It runs to the capstone through every module and every exercise — there is nothing else to keep track of.
 
 ## What you will be able to do
 
@@ -27,9 +29,9 @@ That gate has a name here: the **Definition of Trustworthy (DoT)**. It sits besi
 
 | You are | Go to |
 |---|---|
-| New, and want to see it work first | [Run your first evaluation](01-warm-up/run-your-first-evaluation.md) — 15 min |
-| Ready to follow the course | [The course map](00-orientation/progression.md) |
-| Wondering how to work through it | [How to use this course](00-orientation/how-to-use-this-course.md) |
+| **Starting the course** | [How to use this course](00-orientation/how-to-use-this-course.md) — then just follow `Next` |
+| In a hurry, want to see it work first | [Setup](00-orientation/prerequisites.md), then [run your first evaluation](01-warm-up/run-your-first-evaluation.md) — 15 min |
+| Looking for a specific module | [The course map](00-orientation/progression.md) |
 | Already trained, here for the tools | [The toolkit](toolkit/README.md) |
 
 ## What is in here

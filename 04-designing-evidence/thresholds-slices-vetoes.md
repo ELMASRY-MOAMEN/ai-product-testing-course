@@ -60,4 +60,4 @@ Final DoT result: Fail
 
 ---
 
-Previous: [Protecting evaluation data](data-protection.md) · [Course map](../00-orientation/progression.md) · Next: [AI-as-a-judge: useful, but not an oracle](ai-judge-calibration.md)
+Previous: [Protecting evaluation data](data-protection.md) · [Course map](../00-orientation/progression.md) · Next: [Exercise — Write a veto an average hides](exercises/write-a-veto-an-average-hides.md)

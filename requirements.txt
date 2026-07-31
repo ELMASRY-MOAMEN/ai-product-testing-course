@@ -1,0 +1,4 @@
+# The runner reads YAML manifests and validates them against JSON Schema.
+# Both are third-party; the course does not otherwise leave the standard library.
+PyYAML>=6.0
+jsonschema>=4.0

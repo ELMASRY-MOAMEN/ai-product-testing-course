@@ -24,14 +24,14 @@ Everyone feels this pull, and it is strongest exactly when you are short of time
 
 Read them **alongside** the module that covers what they demonstrate:
 
-| Example | Read during | What it shows |
-|---|---|---|
-| [01 Deterministic API](01-deterministic-api/README.md) | Module 03 | A DoD gate: assertions, no threshold, no dataset population to average |
-| [02 LLM summary](02-llm-summary/README.md) | Modules 01 and 04 | A DoT gate failing on a veto while every average passes |
-| [03 RAG assistant](03-rag-assistant/README.md) | Module 04 | Retrieval quality, groundedness and disclosure risk in one design |
-| [04 Hybrid agent](04-hybrid-agent/README.md) | Modules 02 and 05 | The conjunctive rule: everything probabilistic excellent, and the run fails anyway |
+| Example | Read during | What it shows | The evidence |
+|---|---|---|---|
+| [01 Deterministic API](01-deterministic-api/README.md) | Module 03 | A DoD gate: assertions, no threshold, no dataset population to average | [report](01-deterministic-api/expected-report.md) · [requirements](01-deterministic-api/requirements.md) |
+| [02 LLM summary](02-llm-summary/README.md) | Modules 01 and 04 | A DoT gate failing on a veto while every average passes | [report](02-llm-summary/expected-report.md) |
+| [03 RAG assistant](03-rag-assistant/README.md) | Module 04 | Retrieval quality, groundedness and disclosure risk in one design | [report](03-rag-assistant/expected-report.md) |
+| [04 Hybrid agent](04-hybrid-agent/README.md) | Modules 02 and 05 | The conjunctive rule: everything probabilistic excellent, and the run fails anyway | [report](04-hybrid-agent/expected-report.md) · [requirements](04-hybrid-agent/requirements.md) |
 
-Read the `expected-report.md` in each. The report is the artefact a decision owner actually receives, and reading four of them teaches more about what evidence must survive a run than any description of it.
+**Read the reports, not just the READMEs.** The report is the artefact a decision owner actually receives, and reading four of them teaches more about what evidence must survive a run than any description of it. The two `requirements.md` files show where the scenarios came from — the traceability the [readiness checklist](../toolkit/readiness-checklist.md) asks you to demonstrate.
 
 ## The values in these files are synthetic
 

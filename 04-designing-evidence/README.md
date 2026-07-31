@@ -41,4 +41,4 @@ The second one has a trap built into it. Writing reference answers feels like do
 
 ---
 
-[Course map](../00-orientation/progression.md) · Start the module: [What exactly should we evaluate](evaluators-and-metrics.md)
+Previous: [Exercise — Score a DoT against its ten components](../03-the-two-gates/exercises/score-a-dot-against-its-ten-components.md) · [Course map](../00-orientation/progression.md) · Next: [What exactly should we evaluate](evaluators-and-metrics.md)

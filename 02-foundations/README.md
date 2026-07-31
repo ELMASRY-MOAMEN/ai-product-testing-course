@@ -26,6 +26,8 @@ Everything downstream depends on this. A behaviour put behind the wrong gate pro
 
 [Worked example 04 — Hybrid agent](../worked-examples/04-hybrid-agent/README.md). It decomposes one capability into deterministic and probabilistic behaviours, which is exactly what the exercise asks you to do.
 
+Read [why you must never copy one of these](../worked-examples/READ-ME-BEFORE-COPYING.md) before you open your first example. It takes two minutes and it prevents the most common way to fail the capstone.
+
 ## Mastery criterion
 
 Given five behaviours drawn from a real product, you classify each one and **justify it with question 2** — is the correct output specified, or did somebody have to annotate it? — getting the two genuinely ambiguous ones right.
@@ -34,4 +36,4 @@ If you cannot, reread [note 2](output-classification.md), specifically *Two ques
 
 ---
 
-[Course map](../00-orientation/progression.md) · Start the module: [Why AI products need a different testing approach](testing-foundations.md)
+Previous: [What just happened](../01-warm-up/what-just-happened.md) · [Course map](../00-orientation/progression.md) · Next: [Why AI products need a different testing approach](testing-foundations.md)

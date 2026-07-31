@@ -95,4 +95,4 @@ Archive:
 
 ---
 
-Previous: [AI-as-a-judge: useful, but not an oracle](../04-designing-evidence/ai-judge-calibration.md) · [Course map](../00-orientation/progression.md) · Next: [Minimum execution manifest](evaluation-manifest.md)
+Previous: [Module 05 — Running it](README.md) · [Course map](../00-orientation/progression.md) · Next: [Minimum execution manifest](evaluation-manifest.md)

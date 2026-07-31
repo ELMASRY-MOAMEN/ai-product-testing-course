@@ -12,6 +12,12 @@ Anyone who will be asked to test a product that embeds AI: QA and test engineers
 
 If you have tested software before, the first module will feel familiar and then stop being familiar. That moment is the subject of the course.
 
+## Follow the `Next` link
+
+Every page in the course ends with `Previous · Course map · Next`. The chain runs from here to the capstone through every module opener and every exercise. Follow it and you will not miss anything; the [course map](progression.md) is for jumping around, not for making progress.
+
+**Keep [the glossary](../toolkit/glossary.md) open.** *Oracle*, *slice*, *veto*, *groundedness*, *DoD*, *DoT* — several are used before the note that defines them, and the warm-up uses most of them on purpose.
+
 ## The loop
 
 Each module works the same way:

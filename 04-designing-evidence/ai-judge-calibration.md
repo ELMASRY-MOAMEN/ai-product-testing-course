@@ -41,4 +41,4 @@ sequenceDiagram
 
 ---
 
-Previous: [Thresholds, slices and vetoes](thresholds-slices-vetoes.md) · [Course map](../00-orientation/progression.md) · Next: [End-to-end methodology](../05-running-it/end-to-end-methodology.md)
+Previous: [Exercise — Write a veto an average hides](exercises/write-a-veto-an-average-hides.md) · [Course map](../00-orientation/progression.md) · Next: [Exercise — Build a golden set](exercises/build-a-golden-set.md)

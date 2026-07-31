@@ -44,3 +44,7 @@ A team sends you the design below and asks you to sign it off so the run can sta
 ## Constraint
 
 Do not repair the design. You are not the owner of any of the missing decisions, and proposing a threshold here — even a sensible one — is the exact failure the course assesses.
+
+---
+
+Previous: [DoT: evaluating probabilistic quality](../definition-of-trustworthy.md) · [Course map](../../00-orientation/progression.md) · Next: [Module 04 — Designing the evidence](../../04-designing-evidence/README.md)

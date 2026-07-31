@@ -43,3 +43,7 @@ Then answer the two questions at the end, which are the real ones.
 ## Constraint
 
 "Escalate it" is not an answer on its own. Say to whom, with what, and what you do while waiting — the release is still tonight.
+
+---
+
+Previous: [The methodology in five rules](../five-rules-recap.md) · [Course map](../../00-orientation/progression.md) · Next: [Capstone: evaluate a capability of your own](../../capstone/brief.md)

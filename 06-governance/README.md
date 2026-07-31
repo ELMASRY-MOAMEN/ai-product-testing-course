@@ -29,4 +29,4 @@ Under realistic pressure — a release tonight, a senior person asking, a plausi
 
 ---
 
-[Course map](../00-orientation/progression.md) · Start the module: [Roles and human gates](roles-and-human-gates.md)
+Previous: [Exercise — Fill a manifest from a brief](../05-running-it/exercises/fill-a-manifest-from-a-brief.md) · [Course map](../00-orientation/progression.md) · Next: [Roles and human gates](roles-and-human-gates.md)

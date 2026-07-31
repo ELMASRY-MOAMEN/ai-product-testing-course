@@ -39,4 +39,4 @@ The results must remain separately visible.
 
 ---
 
-Previous: [One product can contain three types of behaviour](output-classification.md) · [Course map](../00-orientation/progression.md) · Next: [DoD: testing deterministic behaviour](../03-the-two-gates/definition-of-done.md)
+Previous: [One product can contain three types of behaviour](output-classification.md) · [Course map](../00-orientation/progression.md) · Next: [Exercise — Classify five behaviours](exercises/classify-five-behaviours.md)

@@ -60,4 +60,4 @@ You should be able to answer these before moving on. If you cannot, rerun the st
 
 ---
 
-Previous: [Run your first evaluation](run-your-first-evaluation.md) · [Course map](../00-orientation/progression.md) · Next: [Why AI products need a different testing approach](../02-foundations/testing-foundations.md)
+Previous: [Run your first evaluation](run-your-first-evaluation.md) · [Course map](../00-orientation/progression.md) · Next: [Module 02 — Foundations](../02-foundations/README.md)

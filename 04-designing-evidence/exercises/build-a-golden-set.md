@@ -57,3 +57,7 @@ annotation_status: <draft, reviewed or approved>
 **You may not write a single `reference` value.** Deciding what the correct answer is for a case is the business expert's decision, not yours. Your job is to specify the set, label it, and make the annotation possible.
 
 The moment your skeletons contain plausible reference answers you wrote yourself, the exercise is failed — however good those answers are.
+
+---
+
+Previous: [AI-as-a-judge: useful, but not an oracle](../ai-judge-calibration.md) · [Course map](../../00-orientation/progression.md) · Next: [Module 05 — Running it](../../05-running-it/README.md)

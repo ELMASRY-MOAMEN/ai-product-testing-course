@@ -37,4 +37,4 @@ It must not:
 
 ---
 
-Previous: [What the automated evaluation runner should produce](../05-running-it/reporting-and-evidence.md) · [Course map](../00-orientation/progression.md) · Next: [Decisions required from the group](decisions-required.md)
+Previous: [Module 06 — Governance](README.md) · [Course map](../00-orientation/progression.md) · Next: [Decisions required from the group](decisions-required.md)

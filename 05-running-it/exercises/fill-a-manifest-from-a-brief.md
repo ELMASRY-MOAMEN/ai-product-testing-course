@@ -59,3 +59,7 @@ Update the manifest, rerun, and answer:
 
 - The high-value slice minimum is not yours to choose on Monday. Placeholder.
 - Do not delete a section to make the run proceed. Removing the slice would produce a clean `Pass`, and that is the failure this exercise is built to catch.
+
+---
+
+Previous: [What the automated evaluation runner should produce](../reporting-and-evidence.md) · [Course map](../../00-orientation/progression.md) · Next: [Module 06 — Governance](../../06-governance/README.md)

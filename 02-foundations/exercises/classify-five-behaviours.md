@@ -41,3 +41,7 @@ Then answer:
 ## Constraint
 
 You have no thresholds, no dataset and no approvals. You are not expected to invent any. If a question cannot be answered without a decision you do not own, say so and name the role that owns it — that is a correct answer here, not an evasion.
+
+---
+
+Previous: [The Hybrid validation model](../dod-dot-hybrid.md) · [Course map](../../00-orientation/progression.md) · Next: [Module 03 — The two gates](../../03-the-two-gates/README.md)

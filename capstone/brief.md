@@ -56,11 +56,15 @@ One thing worth stating up front, because it decides more submissions than anyth
 
 ## Working notes
 
-**Do not copy a worked example as a starting artefact.** Start from [the templates](../toolkit/templates/). Copying a runnable example inherits decisions approved for a different capability, and those decisions then hide inside your submission looking like your own work. Every reader of this material feels this pull; the templates exist to defeat it.
+**Do not copy a worked example as a starting artefact.** Start from [the templates](../toolkit/templates/). Copying a runnable example inherits decisions approved for a different capability, and those decisions then hide inside your submission looking like your own work. Every reader of this material feels this pull; [the note in `worked-examples/`](../worked-examples/READ-ME-BEFORE-COPYING.md) explains why the templates exist to defeat it.
 
 **Ask real questions if you took option A.** Half the value is discovering which of your capability's decisions have no owner. That discovery is a genuine result — record it in artefact 6.
 
 **Run your manifest.** If the runner will not read it, the design is not finished. If it reports `Not Ready` with blockers you predicted, you are done.
+
+**You have no dataset, and you are not going to build one.** Option B supplies no cases, and artefact 3 forbids you from writing a single reference — annotating five cases yourself to make the run proceed would fail the capstone under Override 1. So: point `evaluation_data.path` at a small `dataset.jsonl` of your case skeletons with their `reference` fields left as placeholders naming their owner, exactly as artefact 3 specifies. The run reaches `Not Ready` on the unresolved placeholders before it ever reads a case, which is the correct outcome and the one you should predict.
+
+If you took option A and your capability *does* have annotated cases, use them.
 
 ## If you want it reviewed
 
@@ -68,4 +72,4 @@ Open a discussion on this repository with your submission attached, or hand it t
 
 ---
 
-Previous: [The methodology in five rules](../06-governance/five-rules-recap.md) · [Course map](../00-orientation/progression.md)
+Previous: [Exercise — Name the decision owner](../06-governance/exercises/name-the-decision-owner.md) · [Course map](../00-orientation/progression.md)

@@ -33,10 +33,16 @@ audience: [product-owner, qa, engineering, data-ai, compliance]
 ## Before opening a pull request
 
 ```bash
-python tools/validate_links.py
+pip install -r requirements.txt && python tools/validate_links.py && python tools/validate_path.py
 ```
 
-Every relative link must resolve. Because wikilinks are not used, this covers every link in the corpus.
+**`validate_links.py`** — every relative link resolves. Because wikilinks are not used, this covers every link in the corpus.
+
+**`validate_path.py`** — the checks that link validity cannot make, because they are about *absence*: every chained page ends with exactly one footer, each `Next` is answered by the matching `Previous`, every exercise sits on the chain, and every page has at least one inbound link.
+
+The second one exists because the first was green while the reading chain skipped all six exercises. A chain that omits a page contains no broken link. If you add a page, add it to the chain or link it from somewhere — `validate_path.py` will tell you which you forgot.
+
+**If you change the chain**, edit both the footer of the page and the footers of its two neighbours. Running `validate_path.py` after a one-sided edit reports exactly which side you missed.
 
 If you changed anything the exercises run against, rerun them:
 

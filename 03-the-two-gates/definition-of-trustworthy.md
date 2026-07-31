@@ -90,4 +90,4 @@ The placeholders are intentional. The test author or agent must never invent mis
 
 ---
 
-Previous: [DoD: testing deterministic behaviour](definition-of-done.md) · [Course map](../00-orientation/progression.md) · Next: [What exactly should we evaluate](../04-designing-evidence/evaluators-and-metrics.md)
+Previous: [DoD: testing deterministic behaviour](definition-of-done.md) · [Course map](../00-orientation/progression.md) · Next: [Exercise — Score a DoT against its ten components](exercises/score-a-dot-against-its-ten-components.md)

@@ -25,7 +25,15 @@ Create the virtual environment **outside** the repository, so the link validator
 python -m venv ../course-venv
 ```
 
-Activate it — `../course-venv/Scripts/activate` on Windows, `source ../course-venv/bin/activate` on macOS and Linux. Nothing needs to be installed for the exercises; the runner uses the standard library.
+Activate it — `../course-venv/Scripts/activate` on Windows, `source ../course-venv/bin/activate` on macOS and Linux.
+
+Then install the runner's two dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+`PyYAML` to read manifests, `jsonschema` to validate them. Nothing else — no model, no API, no network.
 
 ## Check that it works
 

@@ -59,7 +59,13 @@ You probably filled the minimum with something reasonable — 0.90, or 0.95 to b
 
 ### If you predicted extra blockers
 
-Check whether you left other placeholders in — `evidence.output_dir` and the `ownership` fields are placeholders in the template too, and the runner treats every `<…>` the same way. That is not a wrong answer; it means your manifest was less complete than the brief allowed.
+Check whether you left other placeholders in — `evidence.output_dir` and the `ownership` fields are placeholders in the template too, and the runner treats every `<…>` the same way.
+
+**Leaving `approved_by` and `approved_on` open on Monday is the stricter answer, and it is defensible.** The reasoning: those fields sit in one block covering the whole `acceptance` section, and on Monday one part of that section — the slice minimum — has been approved by nobody. Filling them then asserts an approval of an acceptance policy that does not yet exist in full.
+
+The manifest here fills them because the brief records a real approval, of the threshold, on a real date. Both readings survive the only test that matters — *is every filled field backed by a record?* — and a submission that leaves them open and **says why** is stronger than one that fills them without noticing there was a question.
+
+What is not defensible is filling them without a record behind them. See question 5.
 
 ## 4. After Thursday
 
@@ -123,7 +129,7 @@ Note that this is the one field an agent or a hurried tester fills without hesit
 | ☐ | Legal's requirement wired as **both** an evaluator and a veto |
 | ☐ | Slice minimum left as a placeholder on Monday |
 | ☐ | Slice **not deleted** to obtain a clean run |
-| ☐ | Prediction was `Not Ready` with exactly the slice-minimum blocker |
+| ☐ | Prediction was `Not Ready`, and matched **your own** manifest blocker for blocker |
 | ☐ | You saw `case_results: []` and could say what it proves |
 | ☐ | Final verdict `Fail`, decided by CT-007, whose recall is perfect |
 | ☐ | You can state what would make the ownership block false |

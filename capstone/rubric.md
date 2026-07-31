@@ -38,7 +38,7 @@ Eight criteria, scored 0 to 3. **24 points total; 18 is competent; below 12 mean
 
 | | |
 |:--:|---|
-| **3** | Each risk assigned the instrument that can see it. Vetoes phrased as conditions **code can test**, and each fires on an evaluator that is actually declared. Slices carry minimum populations. |
+| **3** | Each risk assigned the instrument that can see it. Vetoes phrased as conditions **code can test**, and each fires on an evaluator that is actually declared. Every slice carries a minimum population **in the dataset specification** (artefact 3), with `not concluded` named as the outcome below it. |
 | **2** | Instruments broadly right; a veto is unexecutable as written, or a slice has no minimum population. |
 | **1** | Everything expressed as thresholds, or a veto declared against an evaluator nobody declared. |
 | **0** | Acceptance is one average. |
@@ -46,6 +46,8 @@ Eight criteria, scored 0 to 3. **24 points total; 18 is competent; below 12 mean
 *Below 2: [module 04](../04-designing-evidence/README.md).*
 
 Note the specific failure at level 1 — **a veto wired to nothing** is the most frequently recurring defect in this material, and it survives review because the manifest reads correctly.
+
+**On minimum populations, and a limitation of the lab.** The manifest schema has no field for one, so the runner will report a three-case slice as satisfied with no marker. That is a gap in the tooling, not in your design: score C3 on what your **dataset specification** says, and record the gap in your decisions register. Do not lower your acceptance rule to whatever the tool happens to express — noticing that the instrument cannot carry the rule is the finding, and a submission that says so scores **3**.
 
 ## C4 — Evaluation data
 

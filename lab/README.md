@@ -1,6 +1,8 @@
 # The lab
 
-The evaluation runner used by the exercises. It is a self-contained copy of the `run-product-evaluation` skill from the companion repository, vendored here so the course works offline with no installation.
+The evaluation runner used by the exercises. It is a self-contained copy of the `run-product-evaluation` skill from the companion repository, vendored here so the course runs offline against a mock candidate — no model, no API key, no network.
+
+It needs `PyYAML` and `jsonschema`; see [prerequisites](../00-orientation/prerequisites.md).
 
 ## Running an evaluation
 

@@ -8,14 +8,15 @@ audience: [qa, product-owner, engineering, data-ai, compliance]
 
 Six modules, in order. Each one ends with an exercise and a mastery criterion you can check against yourself.
 
-Every note links to the previous and the next, so you can read the whole course straight through without coming back here.
+**The `Next` link is the course.** It runs from [how to use this course](how-to-use-this-course.md) to the capstone and passes through every module opener and **every exercise** — 34 steps. Follow it and you cannot skip an exercise by accident. This page exists to jump around, not to make progress.
 
 **Time:** roughly eight to twelve hours of work, spread however you like. The capstone is extra, and it is the part that proves anything.
 
 ## Before you start
 
 - [How to use this course](how-to-use-this-course.md) — how to work through it, and what will make you fail
-- [Prerequisites](prerequisites.md) — Python 3.10, a terminal, nothing else
+- [Prerequisites](prerequisites.md) — Python 3.10, a terminal, two pip packages
+- [Glossary](../toolkit/glossary.md) — keep it open. *Oracle*, *slice*, *veto*, *groundedness* and *DoT* all appear before they are defined
 
 ## Module 01 — Warm-up
 

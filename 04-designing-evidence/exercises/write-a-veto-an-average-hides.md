@@ -61,3 +61,7 @@ For each veto, also state in one line **the condition a deterministic check coul
 
 - You do not own the threshold, any slice minimum, or the decision that a condition is unacceptable. Placeholders where a decision is missing; name the owner.
 - Every veto must be phrased so that code, not judgement, decides whether it triggered.
+
+---
+
+Previous: [Thresholds, slices and vetoes](../thresholds-slices-vetoes.md) · [Course map](../../00-orientation/progression.md) · Next: [AI-as-a-judge: useful, but not an oracle](../ai-judge-calibration.md)

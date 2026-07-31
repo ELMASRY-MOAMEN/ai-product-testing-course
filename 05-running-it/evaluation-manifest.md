@@ -6,6 +6,10 @@ audience: [qa, engineering]
 
 # Minimum execution manifest
 
+> **This note is about the shape of the idea, not the shape of the file.** The keys below are illustrative, and **the runner shipped in `lab/` does not accept them**. Its schema is [`toolkit/templates/evaluation-manifest.yaml`](../toolkit/templates/evaluation-manifest.yaml) — that is what the exercise and the capstone use.
+>
+> Read this note for *what a manifest must declare before a run starts*. Take the field names from the template. A cold reader took the keys below to the runner and had the file rejected; the note is the one at fault.
+
 The manifest is the contract between the approved evaluation design and the execution runner.
 
 ```yaml

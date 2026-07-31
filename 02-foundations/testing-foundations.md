@@ -48,4 +48,4 @@ We must answer two separate questions:
 
 ---
 
-Previous: [What just happened](../01-warm-up/what-just-happened.md) · [Course map](../00-orientation/progression.md) · Next: [One product can contain three types of behaviour](output-classification.md)
+Previous: [Module 02 — Foundations](README.md) · [Course map](../00-orientation/progression.md) · Next: [One product can contain three types of behaviour](output-classification.md)
