@@ -66,9 +66,15 @@ One thing worth stating up front, because it decides more submissions than anyth
 
 If you took option A and your capability *does* have annotated cases, use them.
 
-## If you want it reviewed
+## Getting it reviewed
 
-Open a discussion on this repository with your submission attached, or hand it to a colleague with [the rubric](rubric.md). Assessing someone else's submission against the rubric is the fastest way to see the failure modes in your own.
+Score yourself against [the rubric](rubric.md) first, then get a second reading. In order of usefulness:
+
+1. **A colleague who has done this work**, holding the rubric and not your scores.
+2. **[An AI reviewer](review-prompt.md)** if you are working alone — with the warnings on that page, which are this course's own lesson about uncalibrated judges, applied to the thing judging you.
+3. **A discussion on this repository**, with your submission attached.
+
+Assessing someone else's submission against the rubric is the fastest way to see the failure modes in your own.
 
 ---
 

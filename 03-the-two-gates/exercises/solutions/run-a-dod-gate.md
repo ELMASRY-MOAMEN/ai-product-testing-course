@@ -156,17 +156,48 @@ So the routing assertions in `expected_values` are derived from `input.urgency` 
 
 That is how a deterministic behaviour downstream of a probabilistic one gets tested honestly — you fix the upstream value and assert what follows from it. Testing B5 on whatever B2 happened to produce would measure both at once and tell you which one failed: never.
 
-## What to check in your own answer
+## Locate yourself
 
-| | |
-|---|---|
-| ☐ | `thresholds: {}`, and you can say why it is finished rather than empty |
-| ☐ | Entitlement asserted **in both directions**, with a case expecting a refusal |
-| ☐ | You found the 0.75 and did **not** treat it as the verdict |
-| ☐ | You spotted `CTD-06`'s two findings and read the second as a disclosure |
-| ☐ | You refused the 60% bar with the entitlement case as the argument |
-| ☐ | `derived` versus `approved` tied back to question 2 |
-| ☐ | B2 identified as unassertable, and `input.urgency` recognised as a controlled input |
-| ☐ | The ownership block transcribed from the lead's approval, not invented |
+For each item, find the line closest to **what you actually wrote**, then read the verdict.
 
-Four or fewer: reread [DoD: testing deterministic behaviour](../../definition-of-done.md) and [the scenario-writing rules](../../../toolkit/gherkin-and-test-contracts.md) before module 04.
+### 1. What you put in `acceptance.thresholds`
+
+| | You wrote | |
+|:--:|---|---|
+| **A** | `{}`, and you can say a DoD gate has no population to average | ✅ |
+| **B** | `{}`, because the template's example did not seem to apply | ⚠️ Right file, no reason. `{}` and `<approved-threshold>` look alike and mean opposite things — one says *this gate does not work that way*, the other *nobody has decided yet* |
+| **C** | A number, e.g. `response-contract: 1.0` | ❌ A bar of 1.0 is a threshold that happens to be strict, and it invites the conversation in question **d**. Assertions do not have bars |
+
+### 2. What you called the verdict
+
+| | | |
+|:--:|---|---|
+| **A** | The four `assertion_failures`; the 0.75 is arithmetic with no acceptance meaning | ✅ |
+| **B** | "The DoD gate scored 0.75" | ❌ The most misleading sentence available about this run. It invites a reader to think in degrees about a gate that has none |
+| **C** | You did not notice `aggregate_results` contained anything | ⚠️ It does, and someone will quote it. Knowing which numbers in a report carry no acceptance meaning is part of reading one |
+
+### 3. What you made of `CTD-06`
+
+| | | |
+|:--:|---|---|
+| **A** | Two distinct defects: no refusal emitted, **and** a claim disclosed to someone not entitled to it | ✅ |
+| **B** | "The entitlement check failed" | ⚠️ True and incomplete. The check did not merely fail to refuse — it fell through into the normal path and produced output. Different bug, different fix, worse consequence |
+| **C** | One failing case among three | ❌ Three cases failed and this is the only one with a disclosure in it. Counting cases loses exactly the information the two findings were carrying |
+
+### 4. Your answer to the 60% bar
+
+| | | |
+|:--:|---|---|
+| **A** | There is no bar to set — and you named `CTD-06` as what would sit inside the accepted 37.5% | ✅ |
+| **B** | "60% is far too low for a compliance control" | ⚠️ Negotiating the number concedes that a number belongs there. The next offer will be 95% |
+| **C** | "The methodology says DoD gates do not have thresholds" | ❌ Invoking the rule instead of the consequence. It is also the version most easily overridden by someone senior in a hurry |
+
+### 5. Where `urgency` came from
+
+| | | |
+|:--:|---|---|
+| **A** | A controlled input, supplied per case; the card echoes it, and nothing asserts it is *correct* | ✅ |
+| **B** | You noticed it was asserted by `schema_conformance` and left it there | ⚠️ That assertion checks the field is **present**. Whether the value is right is B2, and unassertable here |
+| **C** | You proposed asserting the urgency against an expected value | ❌ That measures your guess at the right urgency, not the system. Every disagreement becomes a defect you cannot attribute |
+
+**Two or more ❌:** reread [DoD: testing deterministic behaviour](../../definition-of-done.md) and [the scenario-writing rules](../../../toolkit/gherkin-and-test-contracts.md) before module 04.

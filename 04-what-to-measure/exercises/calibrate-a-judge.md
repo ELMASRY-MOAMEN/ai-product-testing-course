@@ -49,6 +49,16 @@ The team's summary: *"90% agreement with our senior adviser. Good enough — let
 
 **5. The sentence you send.** The judge's author is a capable engineer who has spent two weeks on this and believes the 90% settles it. Write what you actually send them.
 
+## Check your arithmetic before you open the solution
+
+Part 1 is four numbers, and numbers can be checked without your help:
+
+```bash
+python tools/check_answer.py calibrate agreement=90 reject_recall=70 reject_precision=100 fabrication_recall=50
+```
+
+Substitute your own figures. If one is wrong it names the cells it comes from, not the value it should be. Parts 2 to 5 are judgement and stay yours.
+
 ## Constraints
 
 - You do not own the answer to *what agreement rate is sufficient*. If you find yourself picking a number, stop and name the role that picks it instead.

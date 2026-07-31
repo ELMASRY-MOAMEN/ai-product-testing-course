@@ -51,10 +51,14 @@ def command_paths(page):
         match = COMMAND.match(line)
         if not match:
             continue
-        for candidate in match.groups():
-            # my-work/ is what the reader creates; it is absent by design.
-            if candidate and not candidate.startswith(("<", "-", "$", "my-work/")):
-                yield number, candidate
+        script, argument = match.groups()
+        yield number, script
+        # The argument is only a path when it looks like one: a bare word is a
+        # subcommand, and my-work/ is what the reader creates, absent by design.
+        if not argument or argument.startswith(("<", "-", "$", "my-work/")):
+            continue
+        if "/" in argument or argument.rsplit(".", 1)[-1] in ("yaml", "yml", "json", "jsonl", "md", "py"):
+            yield number, argument
 
 
 def pages():

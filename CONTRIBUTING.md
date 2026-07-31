@@ -44,6 +44,18 @@ The second one exists because the first was green while the reading chain skippe
 
 **If you change the chain**, edit both the footer of the page and the footers of its two neighbours. Running `validate_path.py` after a one-sided edit reports exactly which side you missed.
 
+**If you change an exercise whose answers `tools/check_answer.py` grades** — the module 02 classification and the module 04 calibration arithmetic — change the answer key in the same commit. Nothing enforces that link, and a checker that disagrees with its own solution is worse than no checker.
+
+## On feedback, if you are writing an exercise
+
+A self-taught reader cannot ask anyone whether they were right. Three instruments carry that weight here, in descending order of how hard they are to fool:
+
+1. **Predict, then run.** The reader writes a prediction, the runner rules on it. Unfoolable, and the reason the two executable exercises are the strongest in the course. Reach for this first.
+2. **A discrete answer key**, via `check_answer.py`. It names what is wrong and which question to re-ask, never the answer.
+3. **Forced choice** — the *Locate yourself* block ending every solution. Three plausible things the reader might have written, one right, and a verdict on each near-miss.
+
+Do not add a tick-box checklist. They were removed for a reason: after reading a solution, everything looks like what you meant, and the reader ticks the box.
+
 If you changed anything the exercises run against, rerun them:
 
 ```bash

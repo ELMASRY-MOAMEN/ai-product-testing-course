@@ -130,8 +130,12 @@ The usual forms: a slice below its minimum population read as a pass; an aggrega
 
 ---
 
-## Self-assessment
+## Self-assessment, and its limits
 
-Score yourself before asking anyone else. Then hand the submission and this rubric to a colleague without your scores and compare.
+Score yourself before asking anyone else. Then hand the submission and this rubric to a colleague, without your scores, and compare.
 
 Where you scored yourself higher than they did, you have found the thing you cannot yet see in your own work — which is the most useful output this course can give you.
+
+**Do not trust the total on its own.** Self-scoring your own artefacts has a known failure mode: after reading them back, everything looks like what you meant. Two independent cold-start runs of this course produced completely different capstones and both self-scored **22/24**. An instrument returning the same number for different work is not measuring the work.
+
+What survives that objection is the pair of overrides. They are binary, they are checkable against the file rather than against your memory of writing it, and they do not care how the submission felt to produce. If you have no colleague, [an AI reviewer](review-prompt.md) can be pointed at exactly those — with the cautions on that page.

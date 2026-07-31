@@ -97,17 +97,41 @@ Three would have been enough. Items 1 and 4 are the ones that recur everywhere: 
 
 What it does: credits real work, replaces the wrong number with the right ones, separates the two uses, and gives a concrete next step. What it avoids: arguing about whether the judge is "good", which is not a question anyone can settle.
 
-## What to check in your own answer
+## Locate yourself
 
-| | |
-|---|---|
-| ☐ | You recomputed the 90% and identified it as the least useful figure |
-| ☐ | You found the base-rate problem — accepting everything scores ~67% |
-| ☐ | You separated the two directions: reliable when firing, uninformative when silent |
-| ☐ | You computed **3/6** on the fabrication subgroup, and flagged six as too few |
-| ☐ | You read the **empty cell** as one-directional error, not as good news |
-| ☐ | **Metric: possible with declared bias. Veto: no** — and you can say what makes them different |
-| ☐ | You proposed no sufficiency threshold of your own |
-| ☐ | Three or more calibration gaps, each with an owner |
+The four figures were checked by `check_answer.py`. These are the four judgements it cannot check. Find the line closest to **what you actually wrote**.
 
-Five or fewer: reread [AI-as-a-judge: useful, but not an oracle](../../ai-judge-calibration.md) and [does the metric measure it](../../does-the-metric-measure-it.md).
+### 1. What you said about the 90%
+
+| | You wrote | |
+|:--:|---|---|
+| **A** | It is inflated by the base rate — accepting everything scores about 67% here | ✅ |
+| **B** | "90% is not high enough for a control like this" | ⚠️ Arguing the level accepts the measure. The problem is that agreement on an imbalanced population barely moves however good or bad the judge is |
+| **C** | "90% is decent, the subgroup is the worry" | ⚠️ Right conclusion, and it leaves the headline standing. Someone will quote it in the release note |
+
+### 2. Metric versus veto
+
+| | | |
+|:--:|---|---|
+| **A** | Metric possible with the upward bias declared; veto **no**, because a veto asserts absence | ✅ |
+| **B** | No to both | ⚠️ Defensible and over-strict. A biased estimate whose bias is stated is usable evidence; refusing both means the team ships with no measurement at all |
+| **C** | Yes to both, with monitoring or a post-launch review | ❌ "We will watch it" is not a control. The veto would report *no fabrication triggered* over runs where half went unseen |
+| **D** | Yes to both once the agreement rate improves to some level | ❌ You set a sufficiency threshold. That belongs to the product owner, with Compliance for the veto class |
+
+### 3. The empty cell
+
+| | | |
+|:--:|---|---|
+| **A** | The judge's error is entirely one-directional — it only ever over-accepts | ✅ |
+| **B** | Read as good news: no false alarms, so no wasted review time | ❌ It is the worst possible asymmetry for a control meant to catch the unacceptable, and invisible by construction: nobody investigates a passing case |
+| **C** | Not mentioned | ⚠️ An empty cell is data. It is the one figure in the table that tells you *which way* the judge is wrong |
+
+### 4. What you sent the engineer
+
+| | | |
+|:--:|---|---|
+| **A** | Credited the calibration, replaced the headline with the two figures that decide it, separated the two uses, gave a concrete next step | ✅ |
+| **B** | Explained why the judge is not good enough | ⚠️ Accurate and unusable. "Not good enough" invites tuning, and the veto problem is structural — tuning will not reach it |
+| **C** | Asked them to redo the calibration properly | ❌ They did calibrate, which is the only reason any of this is visible. Most judges reach production with neither a calibration nor this conversation |
+
+**Two or more ❌:** reread [AI-as-a-judge: useful, but not an oracle](../../ai-judge-calibration.md) and [does the metric measure it](../../does-the-metric-measure-it.md).

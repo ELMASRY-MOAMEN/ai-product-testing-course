@@ -38,6 +38,16 @@ Then answer:
 3. B4 has no acceptance criterion yet. Business tells you: "the summary must be accurate." **What do you do with that sentence?** Do not write the criterion — write what you do.
 4. Compliance states that an entitlement error is never acceptable, not even once in ten thousand. Someone proposes handling B1 behind DoT with a threshold of 0.9999. **Answer them.**
 
+## Check the table before you open the solution
+
+The five classifications are either right or not, so you do not have to grade them yourself:
+
+```bash
+python tools/check_answer.py classify B1=DoD B2=DoT B3=DoD B4=DoT B5=DoD
+```
+
+Substitute your own answers. It tells you which are wrong and which question to re-ask — not what the right answer is. Re-think those before reading further; the four written questions are yours to reason about either way.
+
 ## Constraint
 
 You have no thresholds, no dataset and no approvals. You are not expected to invent any. If a question cannot be answered without a decision you do not own, say so and name the role that owns it — that is a correct answer here, not an evasion.

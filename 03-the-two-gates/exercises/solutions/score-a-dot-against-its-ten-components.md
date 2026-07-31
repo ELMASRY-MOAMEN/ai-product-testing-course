@@ -90,16 +90,48 @@ The mean of a 1–5 ordinal judge score is the same instrument that failed in mo
 
 Note what the sentence does **not** do: it does not offer a threshold to keep things moving, it does not soften `Not Ready` into "nearly ready", and it does not accept ownership of decisions that belong to the product owner and to Legal. It also stays useful — it names the shortest path to a run.
 
-## What to check in your own answer
+## Locate yourself
 
-| | |
-|---|---|
-| ☐ | Verdict is **`Not Ready`**, not `Fail` |
-| ☐ | You caught the **threshold picked from an observed score** — the subtlest item |
-| ☐ | You caught the **veto that exists only in prose** |
-| ☐ | You caught **`gpt-latest`** as a variability-control failure, not just a style issue |
-| ☐ | You flagged **raw production data** to an external judge |
-| ☐ | You **proposed no values** for anything missing |
-| ☐ | You named an **owner per blocker**, and did not accept QA as the acceptance owner |
+For each item, find the line closest to **what you actually wrote**, then read the verdict.
 
-Four or fewer ticks: reread [DoT: evaluating probabilistic quality](../../definition-of-trustworthy.md), then the [readiness checklist](../../../toolkit/readiness-checklist.md), before module 04.
+### 1. Your verdict
+
+| | You wrote | |
+|:--:|---|---|
+| **A** | `Not Ready`, with the blockers listed | ✅ |
+| **B** | `Fail` — the design is not good enough | ❌ `Fail` is a statement about the assistant, and the assistant has not been measured. Handing back `Fail` here asserts something about a product nobody tested |
+| **C** | "Not ready yet, but close" | ⚠️ *Close* is how `Not Ready` gets read as *ready*. Four mandatory components are missing; that is not close, and softening it is what the team will quote |
+
+### 2. The threshold of 4.0
+
+| | | |
+|:--:|---|---|
+| **A** | Invalid — it was derived from an observed result, so the gate cannot fail | ✅ The subtlest item in the exercise |
+| **B** | "4.0 on a 1–5 scale is arbitrary / too low" | ⚠️ Arguing the number accepts the method. The defect is not the value, it is that a vendor demo chose it |
+| **C** | Marked present | ❌ A threshold that exists is not a threshold that was approved before results were seen. Those are different components |
+
+### 3. Legal's refund concern
+
+| | | |
+|:--:|---|---|
+| **A** | A veto stated in prose and wired to nothing — the run can report `Pass` with the failure live | ✅ |
+| **B** | "They should add a check for it" | ⚠️ Right direction, and it misses that the *veto* is missing, not just the check. An evaluator without a veto gets averaged away |
+| **C** | Counted as covered, because the design mentions it | ❌ This is the defect's whole trick: mentioning a control reads, on a page, exactly like having one |
+
+### 4. What you did with the missing components
+
+| | | |
+|:--:|---|---|
+| **A** | Named each one and its owner; proposed no values | ✅ |
+| **B** | Suggested reasonable values "as a starting point for discussion" | ❌ There is no such thing as a starting-point threshold. The first number in the room is the one that gets approved |
+| **C** | Named them, but assigned the ownership loosely — "the team", "whoever owns it" | ⚠️ A blocker without a named role is a blocker nobody closes. Note the trap in the brief: the QA lead was offered as approver, and acceptance is not QA's |
+
+### 5. `gpt-latest`
+
+| | | |
+|:--:|---|---|
+| **A** | A variability-control failure — the judge can change between the run and any rerun | ✅ |
+| **B** | Flagged as a style or hygiene issue | ⚠️ It makes the results irreproducible and the baseline comparison impossible. That is a mandatory component, not tidiness |
+| **C** | Not noticed | ❌ Along with "nothing is frozen", this is the row that means no result from this run can ever be re-obtained |
+
+**Two or more ❌:** reread [DoT: evaluating probabilistic quality](../../definition-of-trustworthy.md), then the [readiness checklist](../../../toolkit/readiness-checklist.md), before module 04.

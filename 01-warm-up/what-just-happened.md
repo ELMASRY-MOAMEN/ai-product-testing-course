@@ -52,11 +52,37 @@ That shape has a name — the Definition of Trustworthy — and ten mandatory co
 
 ## Check yourself
 
-You should be able to answer these before moving on. If you cannot, rerun the steps in the previous note rather than reading ahead.
+Answer these in your own words **before** reading the answers below them. Writing the sentence and then comparing is the whole exercise; reading the answer first produces recognition, which feels identical and is not the same thing.
 
-1. The run scored 0.96 and failed. In one sentence, why?
-2. What would have been lost if the veto had been expressed as a stricter threshold — say, 0.99 — instead?
-3. A colleague says: "the threshold field is empty, put 0.8 in it so the pipeline is green, we will confirm with the owner later." What do you answer?
+### 1. The run scored 0.96 and failed. In one sentence, why?
+
+<details>
+<summary>Answer</summary>
+
+Because one case did something that has no acceptable rate — it asserted an approval the source never gave — and a veto blocks acceptance on kind, not on degree, however good the average is.
+
+If your sentence was *"because one case failed"*, it is not yet right: four cases failed, and three of them did not block anything. The blocking one is blocking because of **what** it did, not because it failed.
+</details>
+
+### 2. What would have been lost if the veto had been expressed as a stricter threshold — say 0.99 — instead?
+
+<details>
+<summary>Answer</summary>
+
+Nothing would have been caught. The fabricating case scores **1.000** on recall — it contains every required fact — so it passes any threshold you can write, including 1.0. Raising the bar filters out cases that are *incomplete*; this one was complete and false.
+
+That is the general point: a threshold ranks outputs on a scale the metric can measure. A veto catches something the metric was never measuring.
+</details>
+
+### 3. A colleague says: "the threshold field is empty, put 0.8 in it so the pipeline is green, we will confirm with the owner later." What do you answer?
+
+<details>
+<summary>Answer</summary>
+
+That the moment 0.8 goes in, the report states that someone approved a gate, and nobody did — and the report, the release ticket and any audit inherit that statement as fact. There is no marker anywhere distinguishing an approved 0.8 from a typed one.
+
+The useful reply also offers the way through: get one line from the owner, or run it and report `Not Ready` on that one item with everything else measured. Both take minutes. **Refusing without offering either is the half of the answer that gets you left out of the next decision** — module 07 is entirely about this.
+</details>
 
 ---
 

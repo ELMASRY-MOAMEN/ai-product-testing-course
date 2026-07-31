@@ -119,17 +119,41 @@ The last clause is the important one, and it is not a threat. **A decision made 
 
 If it still goes in without an owner, you have done your part: you refused to author it, you offered the legitimate paths, and you put the gap in writing where the decision owner will see it.
 
-## What to check in your own answer
+## Locate yourself
 
-| | |
-|---|---|
-| ☐ | S1 recognised as **legitimate** — the human gate is allowed to accept risk |
-| ☐ | S1 recorded as an **override on a `Fail`**, not converted into a `Pass` |
-| ☐ | S2 identified as the most dangerous, and you did not dispute the technical merits |
-| ☐ | S4: you noticed that *nobody asking* is the signal |
-| ☐ | S5: population, and "not concluded" as the correct rendering |
-| ☐ | S6: quarantine, new version, past runs preserved and disclosed |
-| ☐ | Question A: S2, S3, S6 — decisions taken by the wrong person, invisibly |
-| ☐ | Question B: you offered the legitimate paths, including attributing the decision to whoever actually makes it |
+For each item, find the line closest to **what you actually wrote**, then read the verdict.
 
-Five or fewer: reread [Roles and human gates](../../roles-and-human-gates.md) and [The methodology in five rules](../../five-rules-recap.md) before the capstone.
+### 1. S1 — the product owner accepts the risk
+
+| | You wrote | |
+|:--:|---|---|
+| **A** | They may. Record it as an override sitting beside a run that stays `Fail` | ✅ |
+| **B** | They may, and you rerun so the record shows the accepted state | ❌ An accepted failure and a passing run are not the same artefact, and only one of them is true |
+| **C** | They may not — a veto blocks release | ❌ The commonest misreading of this material. A veto blocks *automated* acceptance and pushes the decision to the human accountable for it. That is what the gate is for |
+
+### 2. S2 — engineering narrows the veto until it stops firing
+
+| | | |
+|:--:|---|---|
+| **A** | Not theirs to decide; the change goes to the owner with the case it now misses attached — and they may well be right on the merits | ✅ |
+| **B** | You argued the pattern was not a false positive | ⚠️ You took the technical fight and left the ownership question standing. If they win the argument, the veto changes anyway, still without an owner |
+| **C** | Accepted it — the rerun is cleaner and they know the system | ❌ The most dangerous item in the exercise, because it is done in good faith and leaves no trace. The clean `Pass` is indistinguishable from a product that never had the problem |
+
+### 3. Question A — the three that share a shape
+
+| | | |
+|:--:|---|---|
+| **A** | S2, S3, S6 | ✅ Someone substitutes their judgement for a named owner's, and the artefact still looks finished |
+| **B** | You included S1 | ❌ S1 is the legitimate counterpart — the same decision, taken by the person who owns it, recorded honestly |
+| **C** | You included S4 or S5 | ⚠️ Close, and a different family: a control nobody validated, and a number implying more than it contains. Both are real defects; neither is a decision taken by the wrong person |
+
+### 4. Question B — what you sent your manager
+
+| | | |
+|:--:|---|---|
+| **A** | Named the specific false statement, offered both legitimate paths, and offered to attribute the decision to whoever makes it | ✅ |
+| **B** | Explained the principle and refused | ⚠️ Half the skill. A refusal that leaves the release blocked and offers nothing reads as obstruction, and the next decision gets taken without you |
+| **C** | Escalated over their head | ⚠️ Sometimes necessary, rarely first. It also skips the move that usually ends the discussion — an attributed shortcut is a very different proposition from an unattributed one |
+| **D** | Filled it in and flagged it afterwards | ❌ The flag does not travel with the value. The manifest, the report and the ticket all carry the approval; your message does not |
+
+**Two or more ❌:** reread [Roles and human gates](../../roles-and-human-gates.md) and [Holding the boundary](../../holding-the-boundary.md) before the capstone.

@@ -61,14 +61,40 @@ And it already is specified: B1 has a documented entitlement matrix. It belongs 
 
 The related point: an entitlement failure elsewhere in the product is exactly the kind of thing a **veto** exists for. Thresholds express degree; vetoes express kind.
 
-## What to check in your own answer
+## Locate yourself
 
-| | |
-|---|---|
-| ☐ | You classified **per behaviour**, not "the product is AI so it is DoT" |
-| ☐ | You got **B5 deterministic** — the routing table is specified |
-| ☐ | You justified with question 2, not with the technology used |
-| ☐ | On Q3 you **refused to invent** a metric or threshold and named the owner |
-| ☐ | On Q4 you named the actual argument: a threshold is an accepted error rate |
+Ticking boxes does not work here: once you have read the reasoning above it all looks like what you meant. So instead — for each item, find the line closest to **what you actually wrote**, and read the verdict beside it.
 
-Three or fewer ticks: reread [One product can contain three types of behaviour](../../output-classification.md) before module 03.
+### 1. Why B5 is deterministic
+
+| | You wrote something like | |
+|:--:|---|---|
+| **A** | "The routing table is documented, so the expected queue is derivable without running the system" | ✅ |
+| **B** | "It is simple `if/else` logic" | ⚠️ Right answer, wrong criterion. Complexity is not the test — a hand-written 400-rule engine is still DoD, and a two-class model is not |
+| **C** | "It depends on B2, which is a model output, so it inherits the uncertainty" | ❌ You classified by **data flow**. What decides is whether *this behaviour's* expected output is derivable, given its inputs |
+
+### 2. What you did with "the summary must be accurate"
+
+| | | |
+|:--:|---|---|
+| **A** | Recorded it as unresolved, listed the questions that would make it testable, named the owner | ✅ |
+| **B** | Proposed a metric — groundedness, recall — and left the threshold open | ⚠️ Half. Choosing the metric family is defensible; note that you did choose, and that the choice belongs with the requirement it serves |
+| **C** | Wrote a criterion, e.g. "≥ 0.9 factual consistency" | ❌ This is the failure the course exists to prevent, in miniature. A plausible number nobody approved reads downstream exactly like an approved one |
+
+### 3. Your answer on the 0.9999 proposal
+
+| | | |
+|:--:|---|---|
+| **A** | "A threshold **is** an accepted error rate; if no error is acceptable, the behaviour must be specified and asserted" | ✅ |
+| **B** | "0.9999 is unrealistic / we could never measure that" | ⚠️ True and beside the point. It concedes that the *principle* is fine and only the number is wrong, which loses the argument |
+| **C** | "Fine, if Compliance approves it" | ❌ Compliance approving a 1-in-10,000 entitlement failure rate is not a decision they can meaningfully make, and B1 already has a specification to assert |
+
+### 4. How your table justified each row
+
+| | | |
+|:--:|---|---|
+| **A** | Every row says *specified* or *annotated* | ✅ |
+| **B** | Rows say "uses a model" / "does not use a model" | ❌ Technology is not the criterion. A model can implement a specified mapping, and a hand-written heuristic can need annotation |
+| **C** | Some rows justified, the obvious ones not | ⚠️ The obvious ones are where classification errors hide, precisely because nobody argues them |
+
+**Two or more ❌:** reread [One product can contain three types of behaviour](../../output-classification.md), the sections *Two questions, not one* and *Why classification appears in the probabilistic row*, before module 03.

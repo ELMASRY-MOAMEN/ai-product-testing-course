@@ -183,16 +183,40 @@ If the time is genuinely insufficient for the scope, the correct output is a sma
 
 The general form: **the aggregate answers "is it usually good"; slices answer "is it safe where it matters", and a slice needs population to answer at all.**
 
-## What to check in your own answer
+## Locate yourself
 
-| | |
-|---|---|
-| ☐ | **No reference values written by you**, anywhere |
-| ☐ | Risk categories deliberately over-represented, with the reasoning stated |
-| ☐ | Minimum population per slice, and "not concluded" as an outcome |
-| ☐ | Handling status **proposed**, and decided by data protection |
-| ☐ | Annotation by experts, with disagreement escalated to the requirement |
-| ☐ | You refused to pre-write references for "validation" |
-| ☐ | Dataset change → new version, historical results preserved, baseline comparison broken |
+For each item, find the line closest to **what you actually wrote**, then read the verdict.
 
-Five or fewer: reread [Building a Golden Dataset](../../golden-datasets.md) and [Protecting evaluation data](../../data-protection.md) before module 05.
+### 1. Your case skeletons
+
+| | You wrote | |
+|:--:|---|---|
+| **A** | Every `reference` a placeholder naming who resolves it | ✅ |
+| **B** | Illustrative references, marked "example only" | ❌ The exercise's single constraint. An expert reviewing a plausible pre-written answer confirms it far more often than they would have produced it — your assumptions then ship with their signature on them |
+| **C** | The `reference` field left blank | ⚠️ Blank and placeholder look alike and are not. A blank reads as an oversight; `<pending annotation — owner: …>` reads as a decision you identified and declined to take |
+
+### 2. Your composition
+
+| | | |
+|:--:|---|---|
+| **A** | Risk categories over-represented, and you said why in the document | ✅ |
+| **B** | Roughly production proportions, for representativeness | ❌ That yields about six vulnerable-client cases and no computable slice gate. Representativeness is of *intended use and known risk*, not of frequency |
+| **C** | Over-represented, reasoning left implicit | ⚠️ The next person to read the spec will "correct" it back towards production proportions. Unstated reasoning does not survive a handover |
+
+### 3. Three days of expert time
+
+| | | |
+|:--:|---|---|
+| **A** | Experts on the critical categories, you do the non-expert work, ship a smaller approved version | ✅ |
+| **B** | You draft the references, experts validate them | ❌ Sounds like efficiency, is the reverse of annotation. Same failure as item 1, wearing a process |
+| **C** | Ask for more time, or cut the scope | ⚠️ Reasonable, and not an answer on its own — the eligibility rule already lets a partly annotated set be *usable* rather than broken |
+
+### 4. The mandatory-fact list changing
+
+| | | |
+|:--:|---|---|
+| **A** | New version; historical results kept, not recomputed; the baseline comparison breaks | ✅ |
+| **B** | Update the references in place and rerun the affected evaluations | ❌ A silently rewritten baseline. Past reports now cite a dataset version whose content changed underneath them |
+| **C** | New version, and you decided what to do about past approvals | ⚠️ Whether anything approved on the old evidence must be re-examined is the product owner's call. Your job is that they know, with the runs identified |
+
+**Two or more ❌:** reread [Building a Golden Dataset](../../golden-datasets.md) and [Protecting evaluation data](../../data-protection.md) before module 06.

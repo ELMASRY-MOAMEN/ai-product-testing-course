@@ -102,16 +102,40 @@ If you answered F3, that is defensible and the reasoning is the same. If you ans
 
 The distinction to keep: **degree versus kind**. A threshold is an agreed error rate. Some things have no acceptable rate.
 
-## What to check in your own answer
+## Locate yourself
 
-| | |
-|---|---|
-| ☐ | F1 as a threshold matter — resisting the urge to veto everything |
-| ☐ | F2 as **both** a slice and a candidate veto, with the veto question sent to Compliance |
-| ☐ | F4 identified as the most severe, and as a veto |
-| ☐ | You noticed **no evaluator exists** for F3, F4 and F6 |
-| ☐ | Every veto phrased as a condition **code can test** |
-| ☐ | Slice minimums left as placeholders with named owners |
-| ☐ | Final verdict **Fail**, decided by a single case |
+For each item, find the line closest to **what you actually wrote**, then read the verdict.
 
-Four or fewer: reread [Thresholds, slices and vetoes](../../thresholds-slices-vetoes.md) and [What exactly should we evaluate](../../../04-what-to-measure/evaluators-and-metrics.md).
+### 1. What you did with F1 — 22 cases each missing one fact
+
+| | You wrote | |
+|:--:|---|---|
+| **A** | A threshold matter; it is already inside the 0.94 | ✅ |
+| **B** | A veto — 22 cases is a lot | ❌ The commonest overreaction. A veto firing on ordinary quality variation never lets a release through, and a control everyone overrides has stopped existing |
+| **C** | A slice, by "least recent fact" | ⚠️ You can slice by anything; the question is whether the subgroup is *risk-sensitive*. This is a pattern, not a population anyone is exposed to |
+
+### 2. Whether you noticed the evaluator problem
+
+| | | |
+|:--:|---|---|
+| **A** | Recall cannot see F3, F4 or F6 — the design needs a forbidden-content evaluator before those vetoes can exist | ✅ |
+| **B** | Wrote the three vetoes without asking what would score them | ❌ Exactly the recurring defect: a veto naming an evaluator nobody declared. The manifest reads correctly and the control can never fire |
+| **C** | Noticed it for F4 only | ⚠️ Half. F3 and F6 have the same shape — something present that should not be, which a recall metric is structurally blind to |
+
+### 3. How you phrased the vetoes
+
+| | | |
+|:--:|---|---|
+| **A** | As conditions a check can decide: a name not belonging to the case's subject; a statement in no source record | ✅ |
+| **B** | As descriptions — "must not be misleading", "no inappropriate advice" | ❌ A veto that needs a human to interpret it gets interpreted generously on a release evening |
+| **C** | Executable, and you also decided they were unacceptable | ⚠️ Writing the *condition* is yours. Deciding that it blocks acceptance is the product owner's, on Compliance's advice |
+
+### 4. Your verdict, and what decided it
+
+| | | |
+|:--:|---|---|
+| **A** | **Fail**, on F4 — one client's holdings in another client's briefing | ✅ F3 is equally defensible, by the same reasoning |
+| **B** | Fail, because several things were wrong | ⚠️ The count is not the argument. One veto decides it, and naming which one is the skill |
+| **C** | Pass with follow-up actions, since 0.94 clears 0.90 | ❌ That is the original design's verdict — the one this exercise exists to overturn |
+
+**Two or more ❌:** reread [Thresholds, slices and vetoes](../../thresholds-slices-vetoes.md) and [What exactly should we evaluate](../../../04-what-to-measure/evaluators-and-metrics.md).

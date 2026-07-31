@@ -125,17 +125,40 @@ Note that this is the one field an agent or a hurried tester fills without hesit
 
 **What you need for it to be true:** a recorded approval you can point at — the design-review minutes for the 0.90 threshold, and Thursday's written confirmation for the slice minimum — naming who approved what, and when. If you have the record, transcribe it. If you do not, the field stays a placeholder and the manifest stays `Not Ready`, however uncomfortable that is on a release day.
 
-## What to check in your own answer
+## Locate yourself
 
-| | |
-|---|---|
-| ☐ | Two evaluators declared, both at gate DoT |
-| ☐ | Legal's requirement wired as **both** an evaluator and a veto |
-| ☐ | Slice minimum left as a placeholder on Monday |
-| ☐ | Slice **not deleted** to obtain a clean run |
-| ☐ | Prediction was `Not Ready`, and matched **your own** manifest blocker for blocker |
-| ☐ | You saw `case_results: []` and could say what it proves |
-| ☐ | Final verdict `Fail`, decided by CT-007, whose recall is perfect |
-| ☐ | You can state what would make the ownership block false |
+The runner already graded your prediction — that is what the predict-then-run step is for, and it is the one part of this exercise you cannot talk yourself out of. These are the judgements it could not see.
 
-Five or fewer: reread [Minimum execution manifest](../../evaluation-manifest.md) and [What the automated evaluation runner should produce](../../reporting-and-evidence.md) before module 06.
+### 1. What you did on Monday with the slice minimum
+
+| | You wrote | |
+|:--:|---|---|
+| **A** | Kept `<approved-minimum>`, predicted the blocker, ran it | ✅ |
+| **B** | Put 0.90 in — the same as the aggregate, the obvious value | ❌ The report then states the product owner approved a gate for high-value claims, four days before they did. Thursday's meeting would discuss a decision already made in evidence |
+| **C** | Deleted the slice so the manifest would run cleanly | ❌ The worst of the three, and the tidiest-looking. Nothing in the report shows a gate was removed |
+
+### 2. What Legal's requirement became
+
+| | | |
+|:--:|---|---|
+| **A** | An evaluator **and** a veto naming it | ✅ |
+| **B** | A veto only | ❌ A veto naming an evaluator nobody declared. The runner blocks it — `veto names undeclared evaluator` — which is the friendliest possible version of this defect |
+| **C** | An evaluator only, no veto | ❌ Its score gets averaged with the rest and disappears. This is exactly `MR-020` from module 01, one exercise later |
+
+### 3. What you made of `case_results: []`
+
+| | | |
+|:--:|---|---|
+| **A** | The candidate was never invoked — nothing was measured, so nothing may be concluded | ✅ |
+| **B** | Read it as an error or an empty run | ⚠️ It is the design working. Had the runner scored the cases and merely warned, the Monday report would carry real numbers under an incomplete acceptance rule |
+| **C** | Did not look at it | ⚠️ It is the difference between `Not Ready` and a milder `Fail`, in one field |
+
+### 4. Your ownership block
+
+| | | |
+|:--:|---|---|
+| **A** | Filled from the brief's recorded approval — or left open, and you said why | ✅ Both are defensible; see §3 above |
+| **B** | Filled because the brief named a role | ❌ The one field people complete without hesitating, because it feels like transcription. A name in a field is not a sign-off |
+| **C** | Left open with no reason given | ⚠️ Correct outcome, unreadable rationale. The blocker list is where you explain what is missing, not just that something is |
+
+**Two or more ❌:** reread [Minimum execution manifest](../../evaluation-manifest.md) and [What the automated evaluation runner should produce](../../reporting-and-evidence.md) before module 07.
