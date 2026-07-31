@@ -47,4 +47,4 @@ Do not repair the design. You are not the owner of any of the missing decisions,
 
 ---
 
-Previous: [DoT: evaluating probabilistic quality](../definition-of-trustworthy.md) · [Course map](../../00-orientation/progression.md) · Next: [Module 04 — Designing the evidence](../../04-designing-evidence/README.md)
+Previous: [DoT: evaluating probabilistic quality](../definition-of-trustworthy.md) · [Course map](../../00-orientation/progression.md) · Next: [Module 04 — What to measure](../../04-what-to-measure/README.md)

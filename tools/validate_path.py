@@ -10,7 +10,12 @@ So this one starts from what *should* be there and asks whether it is:
   1. every page in the reading chain ends with exactly one navigation footer;
   2. the chain is a chain — each Next matches the following step's Previous;
   3. every exercise is reachable by following Next from the first step;
-  4. every Markdown file has at least one inbound link from another file.
+  4. every Markdown file has at least one inbound link from another file;
+  5. every path in a documented shell command exists.
+
+Check 5 is here because four worked examples shipped a run command carrying two
+wrong path segments, inherited from the repository this material came from.
+Link validation cannot see it: a path inside a fenced code block is not a link.
 """
 from pathlib import Path
 import re
@@ -29,6 +34,27 @@ PREVIOUS = re.compile(r"Previous: \[[^\]]+\]\(([^)]+)\)")
 
 # Pages that legitimately sit outside the reading chain.
 OFF_CHAIN = {"README.md", "CONTRIBUTING.md"}
+
+# Paths a reader is told to type. Angle-bracketed placeholders are not paths.
+COMMAND = re.compile(r"^\s*python\s+(\S+\.py)(?:\s+(\S+))?", re.MULTILINE)
+
+
+def command_paths(page):
+    """Yield every path appearing in a documented python command."""
+    in_fence = False
+    for number, line in enumerate(read(page).splitlines(), 1):
+        if line.strip().startswith("```"):
+            in_fence = not in_fence
+            continue
+        if not in_fence:
+            continue
+        match = COMMAND.match(line)
+        if not match:
+            continue
+        for candidate in match.groups():
+            # my-work/ is what the reader creates; it is absent by design.
+            if candidate and not candidate.startswith(("<", "-", "$", "my-work/")):
+                yield number, candidate
 
 
 def pages():
@@ -121,11 +147,19 @@ def main():
         if count == 0 and page not in OFF_CHAIN:
             errors.append(f"{page}: no inbound link - nothing points a reader here")
 
+    # 5. every path in a documented command exists
+    commands = 0
+    for page in all_pages:
+        for number, candidate in command_paths(page):
+            commands += 1
+            if not (ROOT / candidate).exists():
+                errors.append(f"{page}:{number}: documented command points at missing {candidate}")
+
     if errors:
         print("\n".join(errors))
         return 1
     print(f"path valid ({len(chain)} steps, {len(exercises)} exercises on the chain, "
-          f"{len(all_pages)} pages reachable)")
+          f"{len(all_pages)} pages reachable, {commands} command paths resolve)")
     return 0
 
 

@@ -35,4 +35,4 @@ The discussion should close with explicit owners and decisions for:
 
 ---
 
-Previous: [Roles and human gates](roles-and-human-gates.md) · [Course map](../00-orientation/progression.md) · Next: [Pilot proposal](pilot-proposal.md)
+Previous: [Roles and human gates](../07-governance/roles-and-human-gates.md) · [Course map](../00-orientation/progression.md) · Next: [Pilot proposal](pilot-proposal.md)

@@ -10,7 +10,7 @@ These four evaluations are complete and they run. That makes them the most usefu
 
 ## Do not start your own artefact from one of these
 
-Start from [the templates](../toolkit/templates/) instead. Always.
+Start from [the templates](../toolkit/templates) instead. Always.
 
 A worked example is a set of decisions that somebody approved **for a different capability**: a threshold of 0.85 because that capability's owner accepted that error rate, a slice on `regulated` because that capability had regulated cases, a veto on fabricated approvals because that capability could fabricate them.
 

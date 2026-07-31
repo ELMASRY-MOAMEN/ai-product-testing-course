@@ -96,7 +96,7 @@ The case scores **perfectly** on the metric and blocks the release.
 
 Because 0.927 and 0.917 answer *"is the typical summary good enough"* and *"is the high-value subgroup good enough"* — and neither question is *"did we tell a queue owner that an unapproved claim was approved"*, which has no acceptable rate.
 
-**And the second of those two answers is weaker than it looks.** The `high-value` slice contains three cases. Per [how many cases is enough](../../../04-designing-evidence/how-many-cases-is-enough.md), three cases passing cleanly would still be consistent with a failure rate near 63% — so `0.917 ≥ 0.90 — pass` establishes very little about high-value claims, which the brief says matter more than the rest.
+**And the second of those two answers is weaker than it looks.** The `high-value` slice contains three cases. Per [how many cases is enough](../../../05-designing-evidence/how-many-cases-is-enough.md), three cases passing cleanly would still be consistent with a failure rate near 63% — so `0.917 ≥ 0.90 — pass` establishes very little about high-value claims, which the brief says matter more than the rest.
 
 A complete answer to the product owner says so: the veto decides this run, *and* the high-value gate is not yet carrying the weight it appears to. That second half is the one a hurried report leaves out.
 

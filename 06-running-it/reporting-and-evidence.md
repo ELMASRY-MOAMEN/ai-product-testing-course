@@ -10,18 +10,20 @@ audience: [qa, engineering]
 >
 > | The note says | The shipped runner does |
 > |---|---|
-> | `python .github/skills/…/run_evaluation.py --manifest <path>` | `python lab/run-product-evaluation/scripts/run_evaluation.py <path>` — positional, and that skills path does not exist here |
 > | Exit codes `0 / 1 / 2 / 3` by outcome | **`0` for everything**, including `Fail` and `Not Ready`. You cannot gate CI on it today |
-> | Seven files under `artifacts/` | Two files under `evidence/` |
+> | Seven files under `artifacts/` | Two files under `evidence/`, `report.json` and `report.md` |
 >
-> The gap is worth reading rather than hiding. This is what it looks like when the evidence a method requires exceeds what the tooling produces — and naming that gap, instead of quietly lowering the requirement to match the tool, is the job. See [module 06](../06-governance/README.md).
+> The execution command below **has** been corrected to the one that works here; the two rows above have not, because they describe evidence the runner does not yet produce.
+>
+> The gap is worth reading rather than hiding. This is what it looks like when the evidence a method requires exceeds what the tooling produces — and naming that gap, instead of quietly lowering the requirement to match the tool, is the job. See [module 06](../07-governance/README.md).
 
-## Suggested execution command
+## Execution command
 
 ```bash
-python .github/skills/run-product-evaluation/scripts/run_evaluation.py \
-  --manifest evaluation/evaluation.yaml
+python lab/run-product-evaluation/scripts/run_evaluation.py <path-to-manifest.yaml>
 ```
+
+Positional, not `--manifest`. Paths inside the manifest resolve relative to the **manifest**, not to where you run the command.
 
 ## Expected evidence structure
 

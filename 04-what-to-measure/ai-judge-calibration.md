@@ -41,4 +41,4 @@ sequenceDiagram
 
 ---
 
-Previous: [How many cases is enough](how-many-cases-is-enough.md) · [Course map](../00-orientation/progression.md) · Next: [Exercise — Calibrate a judge](exercises/calibrate-a-judge.md)
+Previous: [Does the metric measure the thing](does-the-metric-measure-it.md) · [Course map](../00-orientation/progression.md) · Next: [Exercise — Calibrate a judge](exercises/calibrate-a-judge.md)

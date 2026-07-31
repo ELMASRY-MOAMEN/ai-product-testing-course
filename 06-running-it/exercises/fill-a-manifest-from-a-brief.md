@@ -16,7 +16,7 @@ You receive this from the *ClaimTriage* product owner — the same product you c
 
 > We want to evaluate the **claim summary** the assistant writes for the queue owner, version 2.3.0 of the summariser. Frozen since Monday, nothing will change during the run.
 >
-> The dataset is ready: 8 synthetic cases, version 1.0.0, annotated and approved by the two claims leads. It is at `05-running-it/exercises/data/claimtriage-dataset.jsonl`.
+> The dataset is ready: 8 synthetic cases, version 1.0.0, annotated and approved by the two claims leads. It is at `06-running-it/exercises/data/claimtriage-dataset.jsonl`.
 >
 > What we care about: the summary must carry the facts the queue owner needs. The claims leads listed them per case. **We approved 0.90** for that in the design review on Monday, before anyone ran anything.
 >
@@ -62,4 +62,4 @@ Update the manifest, rerun, and answer:
 
 ---
 
-Previous: [What the automated evaluation runner should produce](../reporting-and-evidence.md) · [Course map](../../00-orientation/progression.md) · Next: [Module 06 — Governance](../../06-governance/README.md)
+Previous: [What the automated evaluation runner should produce](../reporting-and-evidence.md) · [Course map](../../00-orientation/progression.md) · Next: [Module 07 — Governance](../../07-governance/README.md)

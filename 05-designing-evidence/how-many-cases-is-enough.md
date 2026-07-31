@@ -68,13 +68,17 @@ Who decides what:
 
 You may compute the arithmetic and propose the floor. You may not decide what rate is acceptable, because that is a risk decision.
 
-## A worked example, from this course
+## A worked example
 
-[The module 05 exercise](../05-running-it/exercises/fill-a-manifest-from-a-brief.md) gates a `high-value` slice at a minimum of 0.90. The slice contains **three cases**. It scored 0.917 and passed.
+A capability is gated on a `vulnerable-client` slice at a minimum of 0.95. The run reports that slice at **1.00**, and the release note says the capability is safe for vulnerable clients.
 
-Apply what you just read. Three cases, and had all three passed cleanly, the failure rate could still have been 63%. The gate was satisfied and it demonstrated close to nothing about high-value claims — which are, by the brief's own words, the ones that matter more than the rest.
+The slice contains four cases.
 
-The exercise is not wrong to contain that slice; a real dataset often starts that way. What would be wrong is a report presenting `0.917 ≥ 0.90 — pass` with no note that the population cannot support the conclusion.
+Apply what you just read. Four clean cases put the ceiling on the failure rate near **53%**, so the sentence in the release note is supported by nothing in the run. The gate was met; nothing was established.
+
+Notice what makes this hard to catch. Every number is arithmetically correct, the gate genuinely was satisfied, and the report contains no error. The defect is a **claim the evidence cannot carry**, and only the population reveals it.
+
+**You will meet this again in this course**, in a run you do yourself. When a slice result looks decisive, check its population before you quote it — including in the runs you have already done.
 
 **And the manifest schema in this course has no field for a minimum population.** You cannot express this rule in the artefact. That is a limitation of the tooling, not permission to drop the rule: record the minimum in the dataset specification, state the gap in your decisions register, and report `not concluded` yourself. Lowering an acceptance rule to whatever the instrument happens to measure is how a control quietly stops existing.
 
@@ -82,4 +86,4 @@ The exercise is not wrong to contain that slice; a real dataset often starts tha
 
 ---
 
-Previous: [Exercise — Write a veto an average hides](exercises/write-a-veto-an-average-hides.md) · [Course map](../00-orientation/progression.md) · Next: [AI-as-a-judge: useful, but not an oracle](ai-judge-calibration.md)
+Previous: [Exercise — Write a veto an average hides](exercises/write-a-veto-an-average-hides.md) · [Course map](../00-orientation/progression.md) · Next: [Exercise — Build a golden set](exercises/build-a-golden-set.md)

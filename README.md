@@ -2,7 +2,7 @@
 
 **Learn to evaluate products that embed AI.** From your first failing run to a complete evaluation package you could hand to a decision owner.
 
-Six modules, eight exercises with worked solutions, one capstone. Python 3.10, a terminal, and two pip packages.
+Seven modules, eight exercises with worked solutions, one capstone. Python 3.10, a terminal, and two pip packages.
 
 > **Fifteen minutes to decide whether this is for you:** do the [setup](00-orientation/prerequisites.md), then run [module 01](01-warm-up/run-your-first-evaluation.md). You will execute a real evaluation, watch it fail while every average passes, and understand why that failure is the point.
 
@@ -40,12 +40,12 @@ That gate has a name here: the **Definition of Trustworthy (DoT)**. It sits besi
 |---|---|
 | `00-orientation/` | The map, the method, the prerequisites |
 | `01-warm-up/` | A real run, before any theory |
-| `02-foundations/` → `06-governance/` | The six modules: notes, exercises, solutions |
+| `02-foundations/` → `07-governance/` | The six teaching modules: notes, exercises, solutions |
 | `toolkit/` | Checklists, templates, policies and schemas you keep using afterwards |
 | `worked-examples/` | Four complete evaluations to read — [never to copy](worked-examples/READ-ME-BEFORE-COPYING.md) |
 | `capstone/` | Evaluate a capability of your own choosing, and be assessed on it |
 | `lab/` | The runner that executes the exercises |
-| `annexes/` | Out of scope for the course, kept for reference |
+| `annexes/` | Out of scope for the course: skill authoring, and adopting the method in an organisation |
 
 ## Three rules that hold everywhere in this course
 

@@ -20,7 +20,11 @@ The other exercises in this course evaluate probabilistic behaviour, because tha
 | **B3** | Return the triage card as JSON with `claim_id`, `urgency`, `summary`, `recommended_queue`, all required | The documented response contract |
 | **B5** | Route the claim: `critical` → `queue-A`; otherwise the queue for the product line | The routing table in the ops runbook |
 
-The dataset is at `03-the-two-gates/exercises/data/claimtriage-dod-dataset.jsonl` — eight cases, `annotation_status: derived`.
+The dataset is at `03-the-two-gates/exercises/data/claimtriage-dod-dataset.jsonl` — eight cases, `annotation_status: derived`. Each case supplies `urgency` in its `input`: it is given to the candidate, not produced by it.
+
+**What the engineering lead has already told you**, so that nothing here is yours to invent:
+
+> The candidate is `mock-triage-service`, version **2.3.0**, frozen. I approved the three specifications — response contract, entitlement matrix, routing table — on **2026-07-20**, and that approval is in the design register. I own this gate.
 
 ## What to produce
 
@@ -47,6 +51,8 @@ python lab/run-product-evaluation/scripts/run_evaluation.py my-work/claimtriage-
 ## Constraint
 
 You do not own the response contract, the entitlement matrix or the routing table. If your assertions disagree with the dataset's expected values, the interesting question is which of the two is wrong — and that is a question for the specification's owner, not something to settle by editing the dataset until the run is green.
+
+The ownership block above is transcription, not judgement: there is a recorded approval and you are copying it. **When there is no such record, the field stays a placeholder and the run reports `Not Ready`** — that situation is [module 06's exercise](../../06-running-it/exercises/fill-a-manifest-from-a-brief.md), and it is a different lesson from this one.
 
 ---
 

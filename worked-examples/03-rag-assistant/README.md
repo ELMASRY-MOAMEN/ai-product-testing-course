@@ -20,7 +20,7 @@ A mock assistant answering HR policy questions over a company handbook.
 ## Run it
 
 ```bash
-python .github/skills/run-product-evaluation/scripts/run_evaluation.py examples/03-rag-assistant/manifest.yaml
+python lab/run-product-evaluation/scripts/run_evaluation.py worked-examples/03-rag-assistant/manifest.yaml
 ```
 
 ## What it produces
@@ -63,6 +63,6 @@ Remove the `policy-change` slice entirely: the run reports **Pass**, on a 0.958 
 
 ## Related
 
-- [Thresholds, slices and vetoes](../../04-designing-evidence/thresholds-slices-vetoes.md)
-- [Building a Golden Dataset](../../04-designing-evidence/golden-datasets.md) — why a slice needs enough cases to be measurable
-- [What exactly should we evaluate](../../04-designing-evidence/evaluators-and-metrics.md)
+- [Thresholds, slices and vetoes](../../05-designing-evidence/thresholds-slices-vetoes.md)
+- [Building a Golden Dataset](../../05-designing-evidence/golden-datasets.md) — why a slice needs enough cases to be measurable
+- [What exactly should we evaluate](../../04-what-to-measure/evaluators-and-metrics.md)

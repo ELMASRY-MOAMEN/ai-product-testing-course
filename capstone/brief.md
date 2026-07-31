@@ -56,7 +56,7 @@ One thing worth stating up front, because it decides more submissions than anyth
 
 ## Working notes
 
-**Do not copy a worked example as a starting artefact.** Start from [the templates](../toolkit/templates/). Copying a runnable example inherits decisions approved for a different capability, and those decisions then hide inside your submission looking like your own work. Every reader of this material feels this pull; [the note in `worked-examples/`](../worked-examples/READ-ME-BEFORE-COPYING.md) explains why the templates exist to defeat it.
+**Do not copy a worked example as a starting artefact.** Start from [the templates](../toolkit/templates). Copying a runnable example inherits decisions approved for a different capability, and those decisions then hide inside your submission looking like your own work. Every reader of this material feels this pull; [the note in `worked-examples/`](../worked-examples/READ-ME-BEFORE-COPYING.md) explains why the templates exist to defeat it.
 
 **Ask real questions if you took option A.** Half the value is discovering which of your capability's decisions have no owner. That discovery is a genuine result — record it in artefact 6.
 
@@ -72,4 +72,4 @@ Open a discussion on this repository with your submission attached, or hand it t
 
 ---
 
-Previous: [Exercise — Name the decision owner](../06-governance/exercises/name-the-decision-owner.md) · [Course map](../00-orientation/progression.md)
+Previous: [Exercise — Name the decision owner](../07-governance/exercises/name-the-decision-owner.md) · [Course map](../00-orientation/progression.md)

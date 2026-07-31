@@ -6,6 +6,10 @@ audience: [product-owner, qa]
 
 # From a business requirement to executable evidence
 
+> **Read this note for the traceability chain, not for the case format.** The `required_facts` shape shown further down — objects with `subject`, `predicate` and `object` — **the runner in `lab/` cannot match**: `required_facts_recall` compares each fact as a string against the output text, so a structured object never matches anything.
+>
+> The shape the lab runs is in [`toolkit/templates/evaluation-case.yaml`](../toolkit/templates/evaluation-case.yaml), and the [worked examples](../worked-examples/READ-ME-BEFORE-COPYING.md) show it populated. The chain from requirement to evidence, which is what this note is for, is unaffected.
+
 The following traceability chain must remain visible.
 
 ```mermaid
@@ -93,4 +97,4 @@ The third answer introduces unsupported reasoning. An evaluator must distinguish
 
 ---
 
-Previous: [Does the metric measure the thing](does-the-metric-measure-it.md) · [Course map](../00-orientation/progression.md) · Next: [Building a Golden Dataset](golden-datasets.md)
+Previous: [Module 05 — Designing the evidence](README.md) · [Course map](../00-orientation/progression.md) · Next: [Building a Golden Dataset](golden-datasets.md)

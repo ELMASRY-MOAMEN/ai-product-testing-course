@@ -35,7 +35,7 @@ Eligibility is a declared rule, not a filter applied by hand at run time. The el
 
 **A slice below its minimum population is reported as `not concluded`, never as a score.**
 
-**Basis** is the failure rate the owner would find unacceptable, plus the arithmetic from [how many cases is enough](../../04-designing-evidence/how-many-cases-is-enough.md). A minimum with no basis is a number you invented.
+**Basis** is the failure rate the owner would find unacceptable, plus the arithmetic from `05-designing-evidence/how-many-cases-is-enough.md`. A minimum with no basis is a number you invented.
 
 The manifest schema cannot express this. Record it here, and put the gap in your decisions register.
 

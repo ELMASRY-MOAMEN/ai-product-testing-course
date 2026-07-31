@@ -114,4 +114,4 @@ The distinction to keep: **degree versus kind**. A threshold is an agreed error 
 | ☐ | Slice minimums left as placeholders with named owners |
 | ☐ | Final verdict **Fail**, decided by a single case |
 
-Four or fewer: reread [Thresholds, slices and vetoes](../../thresholds-slices-vetoes.md) and [What exactly should we evaluate](../../evaluators-and-metrics.md).
+Four or fewer: reread [Thresholds, slices and vetoes](../../thresholds-slices-vetoes.md) and [What exactly should we evaluate](../../../04-what-to-measure/evaluators-and-metrics.md).

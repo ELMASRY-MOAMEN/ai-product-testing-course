@@ -66,4 +66,4 @@ The DoT component *Metric* asks how quality is calculated. Answering it fully me
 
 ---
 
-Previous: [What exactly should we evaluate](evaluators-and-metrics.md) · [Course map](../00-orientation/progression.md) · Next: [From a business requirement to executable evidence](requirement-to-evidence.md)
+Previous: [What exactly should we evaluate](evaluators-and-metrics.md) · [Course map](../00-orientation/progression.md) · Next: [AI-as-a-judge: useful, but not an oracle](ai-judge-calibration.md)

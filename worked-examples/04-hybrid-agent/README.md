@@ -19,7 +19,7 @@ An HR agent that answers policy questions and can open a ticket on the employee'
 ## Run it
 
 ```bash
-python .github/skills/run-product-evaluation/scripts/run_evaluation.py examples/04-hybrid-agent/manifest.yaml
+python lab/run-product-evaluation/scripts/run_evaluation.py worked-examples/04-hybrid-agent/manifest.yaml
 ```
 
 ## What it produces

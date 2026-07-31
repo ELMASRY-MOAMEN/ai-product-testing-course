@@ -60,4 +60,4 @@ The moment your skeletons contain plausible reference answers you wrote yourself
 
 ---
 
-Previous: [Exercise — Calibrate a judge](calibrate-a-judge.md) · [Course map](../../00-orientation/progression.md) · Next: [Module 05 — Running it](../../05-running-it/README.md)
+Previous: [How many cases is enough](../how-many-cases-is-enough.md) · [Course map](../../00-orientation/progression.md) · Next: [Module 06 — Running it](../../06-running-it/README.md)

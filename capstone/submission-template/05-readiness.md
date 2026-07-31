@@ -1,6 +1,6 @@
 # 5. Readiness assessment
 
-Score against [the checklist](../../toolkit/readiness-checklist.md), on **what exists**, not what is planned. An item that is "being organised" is not ticked.
+Score against the checklist in `toolkit/readiness-checklist.md`, on **what exists**, not what is planned. An item that is "being organised" is not ticked.
 
 ## Classification
 

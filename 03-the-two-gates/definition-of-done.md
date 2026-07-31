@@ -76,7 +76,7 @@ Three consequences follow:
 - **It is a veto candidate.** One occurrence of a caller seeing a record they are not entitled to is not a matter of degree. No aggregate quality score compensates for it, which is what a veto expresses.
 - **It needs its own cases.** Entitlement is usually a matrix — country, contract type, role, record ownership. Each combination that should refuse needs a case that proves it refuses.
 
-Where the entitlement rule itself depends on personal data, the cases that test it are subject to [the data-protection decisions](../04-designing-evidence/data-protection.md).
+Where the entitlement rule itself depends on personal data, the cases that test it are subject to [the data-protection decisions](../05-designing-evidence/data-protection.md).
 
 > **Takeaway:** If an outcome can be checked exactly, use a deterministic assertion rather than an AI judge.
 

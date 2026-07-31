@@ -95,4 +95,4 @@ Archive:
 
 ---
 
-Previous: [Module 05 — Running it](README.md) · [Course map](../00-orientation/progression.md) · Next: [Minimum execution manifest](evaluation-manifest.md)
+Previous: [Module 06 — Running it](README.md) · [Course map](../00-orientation/progression.md) · Next: [Minimum execution manifest](evaluation-manifest.md)

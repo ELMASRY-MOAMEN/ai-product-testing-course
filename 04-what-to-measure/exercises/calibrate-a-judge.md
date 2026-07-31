@@ -52,8 +52,8 @@ The team's summary: *"90% agreement with our senior adviser. Good enough — let
 ## Constraints
 
 - You do not own the answer to *what agreement rate is sufficient*. If you find yourself picking a number, stop and name the role that picks it instead.
-- Thirty cases is a population. Before concluding anything from a subgroup of six, re-read [how many cases is enough](../how-many-cases-is-enough.md).
+- Thirty cases is a population. Before concluding anything from a subgroup of six, re-read [how many cases is enough](../../05-designing-evidence/how-many-cases-is-enough.md).
 
 ---
 
-Previous: [AI-as-a-judge: useful, but not an oracle](../ai-judge-calibration.md) · [Course map](../../00-orientation/progression.md) · Next: [Exercise — Build a golden set](build-a-golden-set.md)
+Previous: [AI-as-a-judge: useful, but not an oracle](../ai-judge-calibration.md) · [Course map](../../00-orientation/progression.md) · Next: [Module 05 — Designing the evidence](../../05-designing-evidence/README.md)

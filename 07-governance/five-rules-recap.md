@@ -36,4 +36,4 @@ flowchart LR
 
 ---
 
-Previous: [Pilot proposal](pilot-proposal.md) · [Course map](../00-orientation/progression.md) · Next: [Exercise — Name the decision owner](exercises/name-the-decision-owner.md)
+Previous: [Holding the boundary](holding-the-boundary.md) · [Course map](../00-orientation/progression.md) · Next: [Exercise — Name the decision owner](exercises/name-the-decision-owner.md)

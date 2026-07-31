@@ -45,7 +45,7 @@ If you read one, read `verdict-rules.md`. The ordering is the whole argument.
 
 ## Schemas
 
-Machine-checkable shapes for the artefacts, in [`schemas/`](schemas/). Use them to validate what you produce before anyone reviews it.
+Machine-checkable shapes for the artefacts, in [`schemas/`](schemas). Use them to validate what you produce before anyone reviews it.
 
 ---
 

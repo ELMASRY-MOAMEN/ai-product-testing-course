@@ -37,4 +37,4 @@ It must not:
 
 ---
 
-Previous: [Module 06 — Governance](README.md) · [Course map](../00-orientation/progression.md) · Next: [Decisions required from the group](decisions-required.md)
+Previous: [Module 07 — Governance](README.md) · [Course map](../00-orientation/progression.md) · Next: [Holding the boundary](holding-the-boundary.md)

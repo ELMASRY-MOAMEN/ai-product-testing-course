@@ -78,7 +78,7 @@ For the veto, prefer the deterministic route: a forbidden-content check on state
 |:--:|---|---|
 | 1 | **No sufficiency criterion agreed in advance.** Nobody said what agreement rate would be enough, so 90% is being judged after the fact against nothing | Product owner; **Compliance** for anything feeding the veto |
 | 2 | **One annotator.** No second expert, so no inter-annotator agreement. If two advisers disagree about what "grounded" means, the judge cannot be better than the disagreement — and that disagreement is a defect in the requirement | Product owner, with a second business expert |
-| 3 | **Six cases in the subgroup.** Half of six is not a measurement. Three clean cases would have been consistent with a 63% failure rate — see [how many cases is enough](../../how-many-cases-is-enough.md) | Product owner + data/AI |
+| 3 | **Six cases in the subgroup.** Half of six is not a measurement. Three clean cases would have been consistent with a 63% failure rate — see [how many cases is enough](../../../05-designing-evidence/how-many-cases-is-enough.md) | Product owner + data/AI |
 | 4 | **Nothing pinned.** No judge model version, no prompt version, no parameters, and no rule that a change to any of them invalidates the calibration | Data/AI + engineering |
 | 5 | **Provenance of the 30 cases.** Representative or convenient? Drawn from the evaluation set itself, which would make the judge calibrated on cases it will later score? | Data/AI + QA |
 | 6 | **Data handling.** The judge is an external recipient of client briefings and client records | Data protection, with the product owner |

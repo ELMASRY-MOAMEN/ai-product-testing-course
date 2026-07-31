@@ -1,6 +1,8 @@
 # Capstone submission — &lt;capability name&gt;
 
-Copy this folder into `my-work/` before filling it in. Assessed against [the rubric](../rubric.md).
+Copy this folder into `my-work/` before filling it in. Assessed against the rubric in `capstone/rubric.md`.
+
+> Paths in this folder are given **from the repository root**, not as links: this folder is meant to be copied into `my-work/`, and relative links would break the moment you copied it.
 
 ---
 

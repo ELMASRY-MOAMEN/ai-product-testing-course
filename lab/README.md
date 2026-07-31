@@ -22,7 +22,7 @@ Paths inside a manifest — `evaluation_data.path`, `evidence.output_dir` — ar
 
 - Invent an acceptance policy, approve its own evaluator, waive a critical failure, accept residual risk, or make a release decision.
 
-That boundary is the subject of [module 06](../06-governance/README.md), and it is enforced in code, not by convention.
+That boundary is the subject of [module 07](../07-governance/README.md), and it is enforced in code, not by convention.
 
 ## The evaluators available
 

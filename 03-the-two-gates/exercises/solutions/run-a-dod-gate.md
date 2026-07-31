@@ -145,9 +145,16 @@ The one thing `derived` still requires: the specification must exist and be curr
 
 It cannot be asserted because no document says what the correct urgency is for a given claim description — the mapping was learned, and establishing the right answer per case takes a qualified human. `exact_values` would compare the candidate's urgency against an "expected" value that somebody guessed, and every disagreement would be reported as a defect with no way to tell a model error from a bad guess. You would be measuring the annotator.
 
-Note the trap in the dataset you just ran: **`urgency` is present in every case**, and the routing assertions depend on it. It is supplied as a **controlled input**, never asserted. That is how a deterministic behaviour downstream of a probabilistic one gets tested honestly — you fix the upstream value and assert what follows from it.
+Look at how the dataset handles it. **`urgency` appears in two places, and they do different jobs:**
 
-Testing B5 on whatever B2 happened to produce would measure both at once and tell you which one failed: never.
+| Where | What it is | Asserted? |
+|---|---|---|
+| `input.urgency` | A **controlled input** — the value handed to the candidate for this case | No. Never |
+| `mock_output.urgency` | The card echoing it back, because the response contract requires the field | Yes, by `schema_conformance` — *present*, not *correct* |
+
+So the routing assertions in `expected_values` are derived from `input.urgency` and the routing table, both of which are specified. Nothing anywhere asks whether the urgency **was the right one**, and nothing can: that is B2, and it needs an annotated reference set behind DoT.
+
+That is how a deterministic behaviour downstream of a probabilistic one gets tested honestly — you fix the upstream value and assert what follows from it. Testing B5 on whatever B2 happened to produce would measure both at once and tell you which one failed: never.
 
 ## What to check in your own answer
 
@@ -159,6 +166,7 @@ Testing B5 on whatever B2 happened to produce would measure both at once and tel
 | ☐ | You spotted `CTD-06`'s two findings and read the second as a disclosure |
 | ☐ | You refused the 60% bar with the entitlement case as the argument |
 | ☐ | `derived` versus `approved` tied back to question 2 |
-| ☐ | B2 identified as unassertable, and `urgency` recognised as a controlled input |
+| ☐ | B2 identified as unassertable, and `input.urgency` recognised as a controlled input |
+| ☐ | The ownership block transcribed from the lead's approval, not invented |
 
 Four or fewer: reread [DoD: testing deterministic behaviour](../../definition-of-done.md) and [the scenario-writing rules](../../../toolkit/gherkin-and-test-contracts.md) before module 04.

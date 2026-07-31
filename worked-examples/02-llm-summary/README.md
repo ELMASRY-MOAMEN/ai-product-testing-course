@@ -18,7 +18,7 @@ A mock summariser producing meeting reports. Twenty-five cases, each declaring t
 ## Run it
 
 ```bash
-python .github/skills/run-product-evaluation/scripts/run_evaluation.py examples/02-llm-summary/manifest.yaml
+python lab/run-product-evaluation/scripts/run_evaluation.py worked-examples/02-llm-summary/manifest.yaml
 ```
 
 ## What it produces
@@ -45,5 +45,5 @@ That is the argument for vetoes, and it cannot be made with a passing example.
 ## Related
 
 - The verdict order that produces this outcome is stated in the `run-product-evaluation` skill, under `references/verdict-rules.md`
-- [Thresholds, slices and vetoes](../../04-designing-evidence/thresholds-slices-vetoes.md)
+- [Thresholds, slices and vetoes](../../05-designing-evidence/thresholds-slices-vetoes.md)
 - [DoT: evaluating probabilistic quality](../../03-the-two-gates/definition-of-trustworthy.md)

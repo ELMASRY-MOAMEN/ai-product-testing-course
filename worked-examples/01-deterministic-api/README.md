@@ -18,7 +18,7 @@ A report-creation API. Valid requests create a report and write an audit event; 
 ## Run it
 
 ```bash
-python .github/skills/run-product-evaluation/scripts/run_evaluation.py examples/01-deterministic-api/manifest.yaml
+python lab/run-product-evaluation/scripts/run_evaluation.py worked-examples/01-deterministic-api/manifest.yaml
 ```
 
 ## What it produces

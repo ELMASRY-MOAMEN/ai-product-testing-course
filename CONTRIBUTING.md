@@ -48,7 +48,7 @@ If you changed anything the exercises run against, rerun them:
 
 ```bash
 python lab/run-product-evaluation/scripts/run_evaluation.py worked-examples/02-llm-summary/manifest.yaml
-python lab/run-product-evaluation/scripts/run_evaluation.py 05-running-it/exercises/solutions/claimtriage-manifest.yaml
+python lab/run-product-evaluation/scripts/run_evaluation.py 06-running-it/exercises/solutions/claimtriage-manifest.yaml
 ```
 
 Both are expected to report **Fail** on a triggered veto. A solution that stops matching its exercise is worse than no solution.
