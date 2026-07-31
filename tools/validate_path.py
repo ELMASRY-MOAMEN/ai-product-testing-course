@@ -23,7 +23,8 @@ import sys
 
 ROOT = Path(__file__).parents[1]
 
-EXCLUDED_DIRS = {".git", ".venv", ".obsidian", "__pycache__", "evidence", "my-work", "lab"}
+EXCLUDED_DIRS = {".git", ".venv", ".pytest_cache", ".obsidian", "__pycache__",
+                 "evidence", "my-work", "lab", ".github"}
 
 FIRST_STEP = "00-orientation/how-to-use-this-course.md"
 

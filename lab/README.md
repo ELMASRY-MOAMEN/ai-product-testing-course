@@ -28,6 +28,16 @@ That boundary is the subject of [module 07](../07-governance/README.md), and it 
 
 Listed in `run-product-evaluation/scripts/evaluators.py`. A manifest naming a type the registry does not have is blocked **before** the run, not part-way through it — a manifest that promises a measurement nothing can make must not produce a partial report.
 
+## The runner's own tests
+
+`run-product-evaluation/tests/` holds 29 tests that came with the skill. They are not part of the course and you never need to run them — but they are the reason you can trust that `Not Ready` really blocks, that a veto naming an undeclared evaluator is caught, and that secrets are redacted from evidence.
+
+```bash
+pip install -r requirements-dev.txt && pytest lab/run-product-evaluation/tests -q
+```
+
+They run on every push, along with the three validators. See [the workflow](../.github/workflows/validate.yml).
+
 ## Adapters
 
 `run-product-evaluation/adapters/` holds the interface between the runner and a candidate. The exercises use the **mock** adapter: each dataset case carries its own `mock_answer`, so runs are deterministic, offline, and free.

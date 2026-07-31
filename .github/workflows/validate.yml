@@ -1,0 +1,45 @@
+name: validate
+
+# This repository ships four checks and a CONTRIBUTING file telling people to
+# run them. A check nobody runs is the defect this course spends a module on,
+# so they run here, on 3.10 — the version the prerequisites promise.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install
+        run: pip install -r requirements.txt -r requirements-dev.txt
+
+      - name: Links resolve
+        run: python tools/validate_links.py
+
+      - name: The reading path is complete
+        run: python tools/validate_path.py
+
+      - name: The documented runs still produce their figures
+        run: python tools/verify_runs.py
+
+      - name: The runner behaves as its tests require
+        run: pytest lab/run-product-evaluation/tests -q
+
+      - name: The answer key agrees with its own solutions
+        run: |
+          python tools/check_answer.py classify B1=DoD B2=DoT B3=DoD B4=DoT B5=DoD
+          python tools/check_answer.py calibrate agreement=90 reject_recall=70 \
+            reject_precision=100 fabrication_recall=50
+
+      - name: Nothing was left behind
+        run: git diff --exit-code

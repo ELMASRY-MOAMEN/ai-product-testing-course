@@ -1,0 +1,4 @@
+# Only needed to work ON this repository. A reader taking the course needs
+# requirements.txt and nothing else.
+-r requirements.txt
+pytest>=7.0

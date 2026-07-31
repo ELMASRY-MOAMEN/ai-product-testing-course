@@ -33,14 +33,21 @@ audience: [product-owner, qa, engineering, data-ai, compliance]
 ## Before opening a pull request
 
 ```bash
-pip install -r requirements.txt && python tools/validate_links.py && python tools/validate_path.py
+pip install -r requirements-dev.txt
+python tools/validate_links.py && python tools/validate_path.py && python tools/verify_runs.py && pytest lab/run-product-evaluation/tests -q
 ```
+
+All four run on every push and pull request — see [the workflow](.github/workflows/validate.yml).
 
 **`validate_links.py`** — every relative link resolves. Because wikilinks are not used, this covers every link in the corpus.
 
-**`validate_path.py`** — the checks that link validity cannot make, because they are about *absence*: every chained page ends with exactly one footer, each `Next` is answered by the matching `Previous`, every exercise sits on the chain, and every page has at least one inbound link.
+**`validate_path.py`** — the checks link validity cannot make, because they are about *absence*: every chained page ends with exactly one footer, each `Next` is answered by the matching `Previous`, every exercise sits on the chain, every page has an inbound link, and every path in a documented command exists.
 
-The second one exists because the first was green while the reading chain skipped all six exercises. A chain that omits a page contains no broken link. If you add a page, add it to the chain or link it from somewhere — `validate_path.py` will tell you which you forgot.
+It exists because the first was green while the reading chain skipped all six exercises. A chain that omits a page contains no broken link. If you add a page, add it to the chain or link it from somewhere — `validate_path.py` will tell you which you forgot.
+
+**`verify_runs.py`** — the figures the notes quote are the figures the runner produces. Module 01 promises 0.960 and one veto on `MR-020`; module 06 promises 0.927, 0.917 and `CT-007`. A reader who runs the command and sees something else stops trusting the page. Note that the runner exits `0` whatever it concludes, so a shell loop cannot catch this — the assertion has to read the report.
+
+**`pytest lab/…/tests`** — 29 tests that came with the vendored runner. Not part of the course; they are why `Not Ready` really blocks and why a veto naming an undeclared evaluator is caught before a run rather than during one.
 
 **If you change the chain**, edit both the footer of the page and the footers of its two neighbours. Running `validate_path.py` after a one-sided edit reports exactly which side you missed.
 
