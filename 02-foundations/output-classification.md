@@ -46,7 +46,7 @@ The row says *classification* because in practice a classification behaviour is 
 
 A consequence worth stating: choosing DoT here means **accepting a non-zero error rate**, because that is what a threshold is. If the business will not accept any error on that behaviour, it is not a DoT behaviour with a very high threshold — it is a behaviour whose mapping must be specified so it can be asserted.
 
-## Classification example: Client 360 assistant
+## Classification example: a client-relationship assistant
 
 A user asks:
 

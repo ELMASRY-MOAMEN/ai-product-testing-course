@@ -22,7 +22,7 @@ A fabricated approval is not a small amount of wrong. It is a different kind of 
 | **Critical slice** | Is a risk-sensitive subgroup good enough on its own? | A failure spread evenly across slices |
 | **Veto** | Did anything unacceptable happen at all? | Gradual quality decline |
 
-Module 04 builds all three. If you remember one sentence from this course, make it the one you just saw demonstrated: **a good average never cancels a critical failure.**
+Module 05 builds all three. If you remember one sentence from this course, make it the one you just saw demonstrated: **a good average never cancels a critical failure.**
 
 ## 2. `Not Ready` is not `Fail`
 
