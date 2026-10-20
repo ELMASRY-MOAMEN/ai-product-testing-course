@@ -14,9 +14,9 @@ Everything up to here was craft. This module is about the moment the craft meets
 
 | # | Note | Answers |
 |:--:|---|---|
-| 14 | [Roles and human gates](roles-and-human-gates.md) | Who decides what, and where automation stops |
-| 15 | [Holding the boundary](holding-the-boundary.md) | How to refuse a decision that is not yours **and stay useful** |
-| 16 | [The methodology in five rules](five-rules-recap.md) | The whole thing, compressed |
+| 17 | [Roles and human gates](roles-and-human-gates.md) | Who decides what, and where automation stops |
+| 18 | [Holding the boundary](holding-the-boundary.md) | How to refuse a decision that is not yours **and stay useful** |
+| 19 | [The methodology in five rules](five-rules-recap.md) | The whole thing, compressed |
 
 ## Exercise
 

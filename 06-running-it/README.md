@@ -4,7 +4,7 @@ status: reviewed
 audience: [qa, engineering, data-ai]
 ---
 
-# Module 05 — Running it
+# Module 06 — Running it
 
 **Objective:** turn an approved design into a manifest a runner will execute, and read the evidence it produces.
 
@@ -14,9 +14,9 @@ This is the first module where you produce a file the machine reads. It is also 
 
 | # | Note | Answers |
 |:--:|---|---|
-| 12 | [End-to-end methodology](end-to-end-methodology.md) | The seven steps, in execution order |
-| 13 | [Minimum execution manifest](evaluation-manifest.md) | What an approved run declares before it starts |
-| 14 | [What the automated evaluation runner should produce](reporting-and-evidence.md) | Which evidence must survive the run |
+| 14 | [End-to-end methodology](end-to-end-methodology.md) | The seven steps, in execution order |
+| 15 | [Minimum execution manifest](evaluation-manifest.md) | What an approved run declares before it starts |
+| 16 | [What the automated evaluation runner should produce](reporting-and-evidence.md) | Which evidence must survive the run |
 
 ## Exercise
 

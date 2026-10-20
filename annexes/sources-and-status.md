@@ -8,17 +8,13 @@ audience: [product-owner, compliance]
 
 ## Internal methodological basis
 
-This presentation is derived from the working document:
-
-- `Client 360 - Agent testing and evaluation framework (DoD, DoT, Hybrid) - 2026-07-23.md`
-
-The current document retains the confirmed terminology:
+This course is derived from the author's working notes on testing products that embed AI. It retains the confirmed terminology:
 
 - **DoD:** Definition of Done;
 - **DoT:** Definition of Trustworthy;
 - **Hybrid:** separate DoD, DoT and UAT gates when user-facing.
 
-The Merlin AM Golden Dataset and custom section-by-section evaluator remain described as an applied design until delivery evidence confirms an operational end-to-end implementation.
+The golden datasets and custom evaluators described in this course are applied designs. They are not presented as operational implementations.
 
 ## GitHub Copilot skill reference
 
