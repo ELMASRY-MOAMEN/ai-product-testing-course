@@ -50,7 +50,7 @@ flowchart LR
 
 ```json
 {
-  "case_id": "C360-001",
+  "case_id": "REL-001",
   "input": {
     "question": "Who owns the relationship?",
     "client_id": "CLIENT-001"
