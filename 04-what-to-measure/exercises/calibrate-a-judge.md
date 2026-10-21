@@ -12,7 +12,7 @@ Bring a calculator. This is the one exercise in the course with arithmetic in it
 
 ## The situation
 
-*AdvisorBrief* again. The team has built an LLM judge to score whether a briefing is **grounded** — every claim in it supported by the client record. The judge returns `accept` or `reject`.
+*AdvisorBrief* generates a pre-meeting briefing for a wealth-management adviser, from the client's record and recent interactions. You will design its evidence in module 05. The team has built an LLM judge to score whether a briefing is **grounded** — every claim in it supported by the client record. The judge returns `accept` or `reject`.
 
 Before using it, they ran it against **30 cases a senior adviser had already labelled by hand**. Here is the comparison.
 
