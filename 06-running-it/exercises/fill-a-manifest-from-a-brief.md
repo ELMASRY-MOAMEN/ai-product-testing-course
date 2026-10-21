@@ -12,13 +12,13 @@ You will write a manifest and actually run it. The runner is the assessor for mo
 
 ## The brief
 
-You receive this from the *ClaimTriage* product owner — the same product you classified in [module 02](../../02-foundations/exercises/classify-five-behaviours.md).
+You receive this on **Monday 27 July 2026** from the *ClaimTriage* product owner — the same product you classified in [module 02](../../02-foundations/exercises/classify-five-behaviours.md).
 
-> We want to evaluate the **claim summary** the assistant writes for the queue owner, version 2.3.0 of the summariser. Frozen since Monday, nothing will change during the run.
+> We want to evaluate the **claim summary** the assistant writes for the queue owner, version 2.3.0 of the summariser. Frozen this morning, nothing will change during the run.
 >
 > The dataset is ready: 8 synthetic cases, version 1.0.0, annotated and approved by the two claims leads. It is at `06-running-it/exercises/data/claimtriage-dataset.jsonl`.
 >
-> What we care about: the summary must carry the facts the queue owner needs. The claims leads listed them per case. **We approved 0.90** for that in the design review on Monday, before anyone ran anything.
+> What we care about: the summary must carry the facts the queue owner needs. The claims leads listed them per case. **We approved 0.90** for that in the design review this morning, before anyone ran anything. It is in the minutes.
 >
 > High-value claims matter more than the rest, so we want them looked at separately. We have not agreed how strict to be there yet — it is on the agenda for Thursday.
 >
@@ -45,7 +45,7 @@ python lab/run-product-evaluation/scripts/run_evaluation.py my-work/claimtriage-
 
 **3. Compare** your prediction to the output. A wrong prediction here is the most useful result the exercise can give you — work out why before reading on.
 
-**4. Thursday happens.** The product owner writes: *"High-value: same bar as the rest, 0.90. Approved."*
+**4. Thursday happens.** On Thursday 30 July, the product owner writes: *"High-value: same bar as the rest, 0.90. Approved."*
 
 Update the manifest, rerun, and answer:
 
