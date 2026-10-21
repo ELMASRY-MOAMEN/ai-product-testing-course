@@ -14,7 +14,7 @@ The completed artefact is [`claimtriage-manifest.yaml`](claimtriage-manifest.yam
 
 | The brief says | The manifest gets |
 |---|---|
-| "claim summary … version 2.3.0, frozen since Monday" | `candidate.version: 2.3.0`, `frozen: true` |
+| "claim summary … version 2.3.0, frozen this morning" | `candidate.version: 2.3.0`, `frozen: true` |
 | "8 synthetic cases, version 1.0.0, annotated and approved" | `evaluation_data.version: 1.0.0`, `anonymisation: synthetic` |
 | "must carry the facts the queue owner needs … listed per case" | evaluator `required_facts_recall`, gate DoT |
 | "**We approved 0.90** … before anyone ran anything" | `thresholds.required-facts-recall: 0.90` |
@@ -116,8 +116,10 @@ Filled in, it looks like this:
 ownership:
   decision_owner: product owner, claims triage
   approved_by: product owner, claims triage
-  approved_on: 2026-07-31
+  approved_on: 2026-07-30
 ```
+
+**30 July**, because the block covers the whole `acceptance` section, and the section was complete only once Thursday's approval arrived. 27 July is backed by the design-review minutes for the threshold alone.
 
 **What would make it false evidence:** you typing it because the brief mentioned a role, with no recorded approval behind it. A name in a field is not a sign-off. The manifest would then assert that someone approved these thresholds on that date — and the report, the release ticket and any audit would carry that assertion forward as fact.
 
@@ -134,7 +136,7 @@ The runner already graded your prediction — that is what the predict-then-run 
 | | You wrote | |
 |:--:|---|---|
 | **A** | Kept `<approved-minimum>`, predicted the blocker, ran it | ✅ |
-| **B** | Put 0.90 in — the same as the aggregate, the obvious value | ❌ The report then states the product owner approved a gate for high-value claims, four days before they did. Thursday's meeting would discuss a decision already made in evidence |
+| **B** | Put 0.90 in — the same as the aggregate, the obvious value | ❌ The report then states the product owner approved a gate for high-value claims, three days before they did. Thursday's meeting would discuss a decision already made in evidence |
 | **C** | Deleted the slice so the manifest would run cleanly | ❌ The worst of the three, and the tidiest-looking. Nothing in the report shows a gate was removed |
 
 ### 2. What Legal's requirement became

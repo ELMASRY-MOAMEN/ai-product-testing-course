@@ -59,4 +59,4 @@ ownership:
   # Not Ready: a name typed into a field is not a sign-off.
   decision_owner: product owner, claims triage
   approved_by: product owner, claims triage
-  approved_on: 2026-07-31
+  approved_on: 2026-07-30
