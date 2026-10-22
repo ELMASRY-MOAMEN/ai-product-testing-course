@@ -37,4 +37,4 @@ The pilot is successful if the team can:
 
 ---
 
-Previous: [Decisions required from the group](decisions-required.md) · [Course map](../00-orientation/progression.md) · Next: [The methodology in five rules](../07-governance/five-rules-recap.md)
+Previous: [Decisions required from the group](decisions-required.md) · [Course map](../00-orientation/progression.md) · Next: [The methodology in five rules](../09-governance/five-rules-recap.md)

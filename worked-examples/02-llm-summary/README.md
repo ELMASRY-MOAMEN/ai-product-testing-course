@@ -45,5 +45,5 @@ That is the argument for vetoes, and it cannot be made with a passing example.
 ## Related
 
 - The verdict order that produces this outcome is stated in the `run-product-evaluation` skill, under `references/verdict-rules.md`
-- [Thresholds, slices and vetoes](../../05-designing-evidence/thresholds-slices-vetoes.md)
-- [DoT: evaluating probabilistic quality](../../03-the-two-gates/definition-of-trustworthy.md)
+- [Thresholds, slices and vetoes](../../07-designing-evidence/thresholds-slices-vetoes.md)
+- [DoT: evaluating probabilistic quality](../../05-the-two-gates/definition-of-trustworthy.md)

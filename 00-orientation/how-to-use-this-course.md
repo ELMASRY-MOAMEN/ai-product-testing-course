@@ -10,13 +10,13 @@ audience: [qa, product-owner, engineering, data-ai, compliance]
 
 Anyone who will be asked to test a product that embeds AI: QA and test engineers first, but product owners, developers, data specialists and compliance stakeholders follow the same path. No machine-learning background is assumed, and none is taught.
 
-If you have tested software before, the first module will feel familiar and then stop being familiar. That moment is the subject of the course.
+If you have tested software before, part 1 (modules 01 and 02) will feel familiar, and you can skip it. Part 2 will feel familiar and then stop being familiar. That moment is the subject of the course.
 
 ## Follow the `Next` link
 
 Every page in the course ends with `Previous · Course map · Next`. The chain runs from here to the capstone through every module opener and every exercise. Follow it and you will not miss anything; the [course map](progression.md) is for jumping around, not for making progress.
 
-**Keep [the glossary](../toolkit/glossary.md) open.** *Oracle*, *slice*, *veto*, *groundedness*, *DoD*, *DoT* — several are used before the note that defines them, and the warm-up uses most of them on purpose.
+**Keep [the glossary](../toolkit/glossary.md) open.** *Oracle*, *slice*, *veto*, *groundedness*, *DoD*, *DoT* — several are used before the note that defines them, and the first evaluation, in module 03, uses most of them on purpose.
 
 ## The loop
 
@@ -35,7 +35,7 @@ Every defect this methodology was built from was found by **constructing somethi
 
 ## Use a real capability as early as you can
 
-From module 02 onwards, apply each step to a capability from your own work in parallel with the exercises. By the capstone you will already have the material, and the exercises will have stopped being abstract.
+From module 04 onwards, apply each step to a capability from your own work in parallel with the exercises. By the capstone you will already have the material, and the exercises will have stopped being abstract.
 
 If you cannot use a real one, the [capstone brief](../capstone/brief.md) provides a scenario deliberately unlike the four worked examples.
 

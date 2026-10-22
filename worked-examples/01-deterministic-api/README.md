@@ -64,5 +64,5 @@ Set `mock_tool_call` on `API-09` to the expected audit event, and give it an `mo
 
 ## Related
 
-- [DoD: testing deterministic behaviour](../../03-the-two-gates/definition-of-done.md) — including why access control is usually a veto candidate
-- [One product can contain three types of behaviour](../../02-foundations/output-classification.md)
+- [DoD: testing deterministic behaviour](../../05-the-two-gates/definition-of-done.md) — including why access control is usually a veto candidate
+- [One product can contain three types of behaviour](../../04-foundations/output-classification.md)

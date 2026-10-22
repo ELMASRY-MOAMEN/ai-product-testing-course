@@ -18,7 +18,7 @@ These four are stated by the methodology and enforced or enforceable today.
 
 The four rules above are the operational consequences of nine decisions that must be taken and owned before a dataset exists: classification, lawful basis, transformation, minimisation, approved destinations, processing environment, evidence retention, subject rights, and the owner of the residual risk.
 
-Those decisions, their questions and their typical owners are set out in [protecting evaluation data](../../05-designing-evidence/data-protection.md), together with the regulatory anchors they derive from — GDPR Art. 5, 6, 9, 28 and 15-17, and EU AI Act Art. 10 on data governance for testing datasets.
+Those decisions, their questions and their typical owners are set out in [protecting evaluation data](../../07-designing-evidence/data-protection.md), together with the regulatory anchors they derive from — GDPR Art. 5, 6, 9, 28 and 15-17, and EU AI Act Art. 10 on data governance for testing datasets.
 
 **If any of the nine is missing, the evaluation is Not Ready.** This policy applies them; it does not decide them.
 
@@ -39,6 +39,6 @@ Identity and authentication are **not** in scope here. Access control is a deter
 
 ## Related
 
-- [Building a Golden Dataset](../../05-designing-evidence/golden-datasets.md) — anonymisation among the dataset design principles
-- [Roles and human gates](../../07-governance/roles-and-human-gates.md) — who approves data constraints
+- [Building a Golden Dataset](../../07-designing-evidence/golden-datasets.md) — anonymisation among the dataset design principles
+- [Roles and human gates](../../09-governance/roles-and-human-gates.md) — who approves data constraints
 - [Decisions required](../../annexes/decisions-required.md) — storage, access control and retention listed as open group decisions

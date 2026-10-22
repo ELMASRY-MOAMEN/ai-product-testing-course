@@ -45,5 +45,5 @@ The runner reports `Pass`, the slice result, and the two failing cases. The auth
 
 ## Related
 
-- [Roles and human gates](../../07-governance/roles-and-human-gates.md) — who holds which authority
+- [Roles and human gates](../../09-governance/roles-and-human-gates.md) — who holds which authority
 - [Verdict rules](verdict-rules.md) — how the recommendation is computed

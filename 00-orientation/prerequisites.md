@@ -41,7 +41,7 @@ pip install -r requirements.txt
 python lab/run-product-evaluation/scripts/run_evaluation.py worked-examples/02-llm-summary/manifest.yaml
 ```
 
-It should print a verdict. If it prints **Fail**, that is the expected result — [module 01](../01-warm-up/run-your-first-evaluation.md) explains why, and that explanation is the beginning of the course.
+It should print a verdict. If it prints **Fail**, that is the expected result — [module 03](../03-first-evaluation/run-your-first-evaluation.md) explains why, and that explanation is the beginning of the course.
 
 ## Where to put your own work
 
@@ -53,4 +53,4 @@ mkdir my-work
 
 ---
 
-Previous: [How to use this course](how-to-use-this-course.md) · [Course map](progression.md) · Next: [Run your first evaluation](../01-warm-up/run-your-first-evaluation.md)
+Previous: [How to use this course](how-to-use-this-course.md) · [Course map](progression.md) · Next: [Module 01: Testing basics](../01-testing-basics/README.md)

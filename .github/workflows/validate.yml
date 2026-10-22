@@ -40,6 +40,18 @@ jobs:
           python tools/check_answer.py classify B1=DoD B2=DoT B3=DoD B4=DoT B5=DoD
           python tools/check_answer.py calibrate agreement=90 reject_recall=70 \
             reject_precision=100 fabrication_recall=50
+          python tools/check_answer.py criteria AC1=testable AC2=not-testable \
+            AC3=testable AC4=not-testable
+          python tools/check_answer.py boundaries lowest_accepted=20 below=19 \
+            highest_accepted=2000 above=2001 classes=3
+          python tools/check_answer.py levels L1=component L2=integration L3=system \
+            L4=component L5=integration L6=ai
+          python tools/check_answer.py verdicts V1=passed V2=failed V3=blocked \
+            V4=not-applicable V5=not-testable V6=settled
+          python tools/check_answer.py report J1=product J2=environment J3=gap
+          python tools/check_answer.py failures K1=product K2=test K3=environment
+          python tools/check_answer.py figures preparation=83 execution=67 \
+            progress=70 quality=57
 
       - name: Nothing was left behind
         run: git diff --exit-code
