@@ -1,59 +1,41 @@
-# Licence for the written content
+# Licence
 
-Copyright © 2026 Moamen Elmasry.
+Copyright © 2026 Moamen Elmasry. All rights reserved.
 
-The written content of this repository is licensed under the
-**[Creative Commons Attribution-ShareAlike 4.0 International Licence][cc]**
-(CC BY-SA 4.0).
+**Free to read. Reuse is not permitted without written permission.**
 
-[cc]: https://creativecommons.org/licenses/by-sa/4.0/
+The binding text is [LICENSE](LICENSE). This page explains it.
 
-## What that covers
+## What it covers
 
-Every note, module, exercise, worked solution, capstone artefact, template,
-checklist and policy document in this repository — everything whose purpose is
-to teach.
-
-**Not** `tools/` and `lab/`, which are executable and licensed under MIT. See
-[LICENSE](LICENSE).
+The whole repository: every note, module, exercise, worked solution, capstone
+artefact, template, checklist and policy document, and the code in `tools/`
+and `lab/`.
 
 ## What you may do
 
-- **Share** — copy and redistribute it, in any medium or format.
-- **Adapt** — remix, transform and build upon it, **including commercially**:
-  translate it, run a paid training course from it, fold it into your own
-  methodology.
+- **Read it**, here, on [moamen.fr](https://moamen.fr), or in a local copy.
+- **Download or clone it**, and run the tools and the lab on your own machine
+  to follow the course for yourself.
+- **Quote a short extract**, with credit and a link, when you comment on it or
+  review it.
+- **Link to it.**
 
-## On two conditions
+## What you may not do without written permission
 
-**Attribution.** Give appropriate credit, link to the licence, and indicate
-whether you changed anything. A reasonable form:
+- Copy, republish or redistribute it, in whole or in part.
+- Adapt it, translate it, or fold it into your own material or methodology.
+- Use it to run a training course or a workshop, paid or free.
+- Use it commercially in any other way.
+- Use it to train or fine-tune an AI model, or to build a dataset.
 
-> Adapted from *AI Product Testing — the course* by Moamen Elmasry,
-> https://github.com/ELMASRY-MOAMEN/ai-product-testing-course,
-> licensed under CC BY-SA 4.0.
+## Asking
 
-**ShareAlike.** If you adapt it, you must distribute your version under the
-same licence. You may charge for it; you may not close it.
-
-You may not add legal or technical measures that restrict others from doing
-anything the licence permits.
-
-## Why ShareAlike
-
-This material argues that an evaluation must be inspectable to be trusted, and
-that a control nobody can examine is not a control. A version of it that
-readers cannot inspect and improve would contradict what it teaches.
-
-Charging for training built on this is fine and expected. Making the material
-itself unreadable is not.
-
-## The full legal text
-
-The summary above is not the licence. The binding text is at
-<https://creativecommons.org/licenses/by-sa/4.0/legalcode>.
+If you want to do one of these things, ask. Open an issue on this repository
+or contact me through [moamen.fr](https://moamen.fr), and say what you want
+to use and how. I answer.
 
 ## Citing it
 
-See [CITATION.cff](CITATION.cff), which GitHub renders as a *Cite this
-repository* button.
+Pointing to the course is always fine. See [CITATION.cff](CITATION.cff), which
+GitHub renders as a *Cite this repository* button.
