@@ -2,6 +2,8 @@
 
 Corrections, better exercises and reports of things that did not teach well are all welcome. Open an issue or a pull request.
 
+The course is free to read and not open for reuse (see [LICENSE](LICENSE)). By sending a contribution, you agree that it is published here under the same terms, and that I may use it in the course and its later versions.
+
 ## What is most useful
 
 **Tell me where the course failed you.** Which note you had to read twice, which exercise was ambiguous, which solution answered a question you were not asking. That is worth more than a typo fix, and it is the only way the course improves at the thing it claims to do.

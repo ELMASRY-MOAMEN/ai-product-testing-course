@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: "AI Product Testing — the course"
-message: "If you use or adapt this material, please cite it and link to the canonical repository."
+message: "If you refer to this material, please cite it and link to the canonical repository. Reuse needs the author's written permission; see LICENSE."
 type: software
 abstract: >-
   A hands-on course on testing products that embed AI: nine modules in two
@@ -14,7 +14,6 @@ authors:
     given-names: Moamen
 repository-code: "https://github.com/ELMASRY-MOAMEN/ai-product-testing-course"
 url: "https://github.com/ELMASRY-MOAMEN/ai-product-testing-course"
-license: CC-BY-SA-4.0
 license-url: "https://github.com/ELMASRY-MOAMEN/ai-product-testing-course/blob/main/LICENSE"
 keywords:
   - ai-testing

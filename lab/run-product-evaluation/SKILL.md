@@ -2,7 +2,7 @@
 name: run-product-evaluation
 description: >
   Run an approved product evaluation from a versioned manifest. Use when asked to validate a manifest, execute eligible cases through an adapter, aggregate results, apply vetoes, or create an evidence report.
-license: MIT
+license: Proprietary. Free to read, reuse not permitted. See LICENSE at the repository root.
 ---
 
 # Run Product Evaluation

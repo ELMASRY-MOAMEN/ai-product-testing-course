@@ -1,32 +1,44 @@
-This repository is licensed in two parts.
+AI Product Testing — the course
+Copyright (c) 2026 Moamen Elmasry. All rights reserved.
+
+Free to read. Reuse is not permitted without written permission.
+
+This applies to the whole repository: the written content (notes, modules,
+exercises, worked solutions, capstone, templates, checklists, policy
+documents) and the code (tools/ and lab/).
 
 ────────────────────────────────────────────────────────────────────────────
-THE WRITTEN CONTENT — Creative Commons Attribution-ShareAlike 4.0
+WHAT YOU MAY DO
 ────────────────────────────────────────────────────────────────────────────
 
-Every note, module, exercise, worked solution, template, checklist and policy
-document — everything that teaches — is licensed under CC BY-SA 4.0.
-
-You may share and adapt it, including commercially, provided you give credit
-and license your derivative under the same terms. See LICENSE-CONTENT.md.
-
-────────────────────────────────────────────────────────────────────────────
-THE CODE — MIT
-────────────────────────────────────────────────────────────────────────────
-
-Everything executable — tools/ and lab/ — is licensed under MIT, below.
-
-lab/run-product-evaluation/ is a vendored copy of a skill from the companion
-repository ai-product-testing-skills, which is MIT. It stays MIT here.
+- Read it, on GitHub, on https://moamen.fr, or in a local copy.
+- Download or clone it, and run the tools and the lab on your own machine,
+  to follow the course for your own learning.
+- Quote a short extract, with credit and a link to this repository, when you
+  comment on it, review it or discuss it.
+- Link to it.
 
 ────────────────────────────────────────────────────────────────────────────
+WHAT YOU MAY NOT DO WITHOUT WRITTEN PERMISSION
+────────────────────────────────────────────────────────────────────────────
 
-MIT License
+- Copy, republish or redistribute it, in whole or in part, in any medium.
+- Adapt, translate or build on it, or fold it into your own material or
+  methodology.
+- Use it to deliver training, a course or a workshop, paid or free.
+- Use it commercially in any other way.
+- Use it to train or fine-tune an AI model, or to build a dataset.
 
-Copyright (c) 2026 Moamen Elmasry
+To ask for permission, open an issue on this repository or contact the author
+through https://moamen.fr.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+────────────────────────────────────────────────────────────────────────────
+NO WARRANTY
+────────────────────────────────────────────────────────────────────────────
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+The material and the code are provided "as is", without warranty of any
+kind, express or implied. The author is not liable for any claim, damage or
+other liability arising from their use.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+Nothing in this notice limits what the law allows you to do anyway, such as
+private copying or quotation, where those exceptions apply.
