@@ -78,4 +78,4 @@ Assessing someone else's submission against the rubric is the fastest way to see
 
 ---
 
-Previous: [Exercise — Name the decision owner](../07-governance/exercises/name-the-decision-owner.md) · [Course map](../00-orientation/progression.md)
+Previous: [Exercise — Name the decision owner](../09-governance/exercises/name-the-decision-owner.md) · [Course map](../00-orientation/progression.md)

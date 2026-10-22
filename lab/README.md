@@ -1,6 +1,8 @@
 # The lab
 
-The evaluation runner used by the exercises. It is a self-contained copy of the `run-product-evaluation` skill from the companion repository, vendored here so the course runs offline against a mock candidate — no model, no API key, no network.
+The evaluation runner used by the exercises, and in `test-results/` the script that summarises a JUnit test report by level, used in [module 02](../02-running-a-campaign/run-and-read-results.md).
+
+The evaluation runner It is a self-contained copy of the `run-product-evaluation` skill from the companion repository, vendored here so the course runs offline against a mock candidate — no model, no API key, no network.
 
 It needs `PyYAML` and `jsonschema`; see [prerequisites](../00-orientation/prerequisites.md).
 
@@ -22,7 +24,7 @@ Paths inside a manifest — `evaluation_data.path`, `evidence.output_dir` — ar
 
 - Invent an acceptance policy, approve its own evaluator, waive a critical failure, accept residual risk, or make a release decision.
 
-That boundary is the subject of [module 07](../07-governance/README.md), and it is enforced in code, not by convention.
+That boundary is the subject of [module 09](../09-governance/README.md), and it is enforced in code, not by convention.
 
 ## The evaluators available
 

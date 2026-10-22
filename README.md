@@ -2,9 +2,9 @@
 
 [![validate](https://github.com/ELMASRY-MOAMEN/ai-product-testing-course/actions/workflows/validate.yml/badge.svg)](https://github.com/ELMASRY-MOAMEN/ai-product-testing-course/actions/workflows/validate.yml)
 
-**Learn to evaluate products that embed AI.** From your first failing run to a complete evaluation package you could hand to a decision owner.
+**Learn to test products that embed AI.** From the basics of testing to a complete evaluation package you could hand to a decision owner.
 
-Seven modules, eight exercises with worked solutions, one capstone. Python 3.10, a terminal, and two pip packages — no model, no API key, no network.
+Nine modules in two parts, thirteen exercises with worked solutions, one capstone. Python 3.10, a terminal, and two pip packages — no model, no API key, no network.
 
 ## Start here
 
@@ -15,7 +15,9 @@ pip install -r requirements.txt
 python lab/run-product-evaluation/scripts/run_evaluation.py worked-examples/02-llm-summary/manifest.yaml
 ```
 
-That run reports **Fail** while every average passes its threshold. Fifteen minutes on [why that is the point](01-warm-up/run-your-first-evaluation.md) will tell you whether this course is for you.
+That run reports **Fail** while every average passes its threshold. Fifteen minutes on [why that is the point](03-first-evaluation/run-your-first-evaluation.md) will tell you whether this course is for you.
+
+**Part 1**, modules 01 and 02, covers what any product needs: tests whose expected results someone specified, at the right level, and a campaign reported without claiming more than was tested. If you already know it, start with the run above and [module 03](03-first-evaluation/run-your-first-evaluation.md). **Part 2**, modules 03 to 09, covers what generative AI adds.
 
 Then follow the **`Next`** link at the foot of each page. It runs from [the first page](00-orientation/how-to-use-this-course.md) to the capstone through every module and every exercise — there is nothing else to keep track of.
 
@@ -29,6 +31,8 @@ Then follow the **`Next`** link at the foot of each page. It runs from [the firs
 | **B** | Build the evidence: a governed dataset, metrics, thresholds, slices and vetoes |
 | **C** | Report **Not Ready** and name the role that owns a missing decision, instead of inventing a value |
 | **D** | Run an approved evaluation and read its verdict as evidence, not as a score |
+| **E** | Design the tests of a behaviour that has one right answer, at the right level, from an expected result someone specified |
+| **F** | Run a test campaign and report its state without claiming more than was tested |
 
 Criterion **C** is the one this course is built around, and the one most people fail first.
 
@@ -50,18 +54,19 @@ You only ever need the first two rows. The rest is there when the course sends y
 
 | Folder | What it holds |
 |---|---|
-| `00-orientation/` → `01-warm-up/` | Where you start: how to work through it, and a real run before any theory |
-| `02-foundations/` → `07-governance/` | The six teaching modules — notes, exercises, worked solutions |
+| `00-orientation/` | Where you start: how to work through it |
+| `01-testing-basics/`, `02-running-a-campaign/` | Part 1: testing a product, for any product, with or without AI |
+| `03-first-evaluation/` → `09-governance/` | Part 2: evaluating generative AI, from a real run before any theory to governance |
 | `capstone/` | Evaluate a capability of your own choosing, and be assessed on it |
 | `toolkit/` | Checklists, templates, policies and schemas you keep using after the course |
 | `worked-examples/` | Four complete evaluations to read — [never to copy](worked-examples/READ-ME-BEFORE-COPYING.md) |
-| `lab/` | The evaluation runner the exercises execute |
+| `lab/` | The evaluation runner the exercises execute, and the test-report summary of module 02 |
 | `tools/` | The checks that keep this repository honest — links, reading path, documented figures |
 | `annexes/` | Deliberately out of scope: skill authoring, and adopting the method in an organisation |
 
 ## Scope
 
-This course teaches the **evaluation of products that embed AI**. It does not teach how to build models, and it does not benchmark them.
+This course teaches the **testing of products that embed AI**: designing and running tests for what has one right answer, and evaluating what does not. It does not teach how to build models, it does not benchmark them, and it does not cover performance, security or accessibility testing, which each need their own methods.
 
 ## Status
 

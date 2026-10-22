@@ -33,5 +33,5 @@ The verdict is **Fail**. Step 2 ends the evaluation. Steps 3 and 4 are still com
 
 ## Related
 
-- [Thresholds, slices and vetoes](../../05-designing-evidence/thresholds-slices-vetoes.md) — how each is defined
-- [Runner outputs](../../06-running-it/reporting-and-evidence.md) — what a verdict must be reported with
+- [Thresholds, slices and vetoes](../../07-designing-evidence/thresholds-slices-vetoes.md) — how each is defined
+- [Runner outputs](../../08-running-it/reporting-and-evidence.md) — what a verdict must be reported with

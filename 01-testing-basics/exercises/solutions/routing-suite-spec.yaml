@@ -1,0 +1,43 @@
+# Solution artefact for "A green suite on a bug": the same suite, with the
+# expected queues taken from the routing table in the ops runbook instead of
+# from what the service returned. Synthetic.
+
+evaluation:
+  id: claimtriage-routing-suite
+  version: 1.0.0
+  framework: DoD
+
+candidate:
+  name: mock-triage-service
+  version: 2.3.0
+  frozen: true
+
+candidate_adapter:
+  type: mock
+
+evaluation_data:
+  path: ../data/routing-spec.jsonl
+  version: 1.0.0
+  anonymisation: synthetic
+
+evaluators:
+  - id: queue-routing
+    type: exact_values
+    gate: DoD
+    version: 1.0.0
+
+execution:
+  repetitions: 1
+
+acceptance:
+  thresholds: {}
+  critical_slices: []
+  vetoes: []
+
+evidence:
+  output_dir: evidence
+
+ownership:
+  decision_owner: engineering lead, claims triage
+  approved_by: engineering lead, claims triage
+  approved_on: 2026-07-20

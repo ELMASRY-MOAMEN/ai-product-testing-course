@@ -21,7 +21,7 @@ Eight criteria, scored 0 to 3. **24 points total; 18 is competent; below 12 mean
 | **1** | The capability classified as a whole rather than per behaviour, or "it uses an LLM so it is DoT". |
 | **0** | No classification, or deterministic behaviour placed behind a threshold. |
 
-*Below 2: [module 02](../02-foundations/README.md).*
+*Below 2: [module 04](../04-foundations/README.md).*
 
 ## C2 — The ten DoT components
 
@@ -32,7 +32,7 @@ Eight criteria, scored 0 to 3. **24 points total; 18 is competent; below 12 mean
 | **1** | Components missing without acknowledgement. |
 | **0** | A design that cannot say what it is measuring. |
 
-*Below 2: [module 03](../03-the-two-gates/README.md).*
+*Below 2: [module 05](../05-the-two-gates/README.md).*
 
 ## C3 — Instrument fit: threshold, slice, veto
 
@@ -43,13 +43,13 @@ Eight criteria, scored 0 to 3. **24 points total; 18 is competent; below 12 mean
 | **1** | Everything expressed as thresholds, or a veto declared against an evaluator nobody declared. |
 | **0** | Acceptance is one average. |
 
-*Below 2: [module 05](../05-designing-evidence/README.md).*
+*Below 2: [module 07](../07-designing-evidence/README.md).*
 
 Note the specific failure at level 1 — **a veto wired to nothing** is the most frequently recurring defect in this material, and it survives review because the manifest reads correctly.
 
 **On minimum populations, and a limitation of the lab.** The manifest schema has no field for one, so the runner will report a three-case slice as satisfied with no marker. That is a gap in the tooling, not in your design: score C3 on what your **dataset specification** says, and record the gap in your decisions register. Do not lower your acceptance rule to whatever the tool happens to express — noticing that the instrument cannot carry the rule is the finding, and a submission that says so scores **3**.
 
-A minimum population scores **3** only if it has a **basis**: the failure rate its owner would find unacceptable, and the arithmetic from [how many cases is enough](../05-designing-evidence/how-many-cases-is-enough.md) that turns it into a number. A round figure with no reasoning behind it is a number you invented, and Override 1 applies to it like any other.
+A minimum population scores **3** only if it has a **basis**: the failure rate its owner would find unacceptable, and the arithmetic from [how many cases is enough](../07-designing-evidence/how-many-cases-is-enough.md) that turns it into a number. A round figure with no reasoning behind it is a number you invented, and Override 1 applies to it like any other.
 
 ## C4 — Evaluation data
 
@@ -60,7 +60,7 @@ A minimum population scores **3** only if it has a **basis**: the failure rate i
 | **1** | A list of cases with no eligibility, versioning or handling. |
 | **0** | **You wrote the reference answers yourself.** |
 
-*Below 2: [module 05](../05-designing-evidence/README.md), notes 10 and 11.*
+*Below 2: [module 07](../07-designing-evidence/README.md), notes 18 and 19.*
 
 ## C5 — The manifest runs
 
@@ -71,7 +71,7 @@ A minimum population scores **3** only if it has a **basis**: the failure rate i
 | **1** | It does not run, or a section was deleted to make it run. |
 | **0** | No manifest. |
 
-*Below 2: [module 06](../06-running-it/README.md).*
+*Below 2: [module 08](../08-running-it/README.md).*
 
 Deleting the slice block to obtain a clean run scores **1**, however tidy the result looks.
 
@@ -95,7 +95,7 @@ Deleting the slice block to obtain a clean run scores **1**, however tidy the re
 | **1** | A list of open questions with no owners. |
 | **0** | No register, because nothing was left open. |
 
-*Below 2: [module 07](../07-governance/README.md).*
+*Below 2: [module 09](../09-governance/README.md).*
 
 Scoring **0** here almost always coincides with the override below.
 

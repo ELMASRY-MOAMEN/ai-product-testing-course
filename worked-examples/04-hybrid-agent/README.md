@@ -72,7 +72,7 @@ You cannot demonstrate this by *deleting* the `gate` line: the schema requires i
 
 ## Related
 
-- [The Hybrid validation model](../../02-foundations/dod-dot-hybrid.md)
-- [DoD: testing deterministic behaviour](../../03-the-two-gates/definition-of-done.md)
+- [The Hybrid validation model](../../04-foundations/dod-dot-hybrid.md)
+- [DoD: testing deterministic behaviour](../../05-the-two-gates/definition-of-done.md)
 - [The LLM summary example](../02-llm-summary/README.md) — failure by veto
 - [The RAG example](../03-rag-assistant/README.md) — failure by critical slice

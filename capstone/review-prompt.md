@@ -10,7 +10,7 @@ audience: [qa, product-owner, engineering, data-ai, compliance]
 
 ## First, what you are about to use
 
-You are about to use an **uncalibrated judge** on your own work. You spent [module 04](../04-what-to-measure/ai-judge-calibration.md) learning what that means, so apply it here rather than forgetting it the moment the judge is scoring you:
+You are about to use an **uncalibrated judge** on your own work. You spent [module 06](../06-what-to-measure/ai-judge-calibration.md) learning what that means, so apply it here rather than forgetting it the moment the judge is scoring you:
 
 | | |
 |---|---|

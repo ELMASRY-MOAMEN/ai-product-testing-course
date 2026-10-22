@@ -1,7 +1,7 @@
 """Check that the figures printed in the course are still the figures it produces.
 
-Several notes quote exact numbers — 0.960 aggregate in module 01, 0.927 and
-0.917 in module 06, four assertion failures in module 03. Those numbers are
+Several notes quote exact numbers — 0.960 aggregate in module 03, 0.927 and
+0.917 in module 08, four assertion failures in module 05. Those numbers are
 teaching material: a reader who runs the command and sees something else stops
 trusting the page, and rightly.
 
@@ -20,6 +20,16 @@ RUNNER = ROOT / "lab" / "run-product-evaluation" / "scripts" / "run_evaluation.p
 
 # manifest -> what the course tells the reader they will see
 EXPECTED = {
+    "01-testing-basics/exercises/data/routing-suite.yaml": {
+        "status": "Pass",
+        "gates": {"DoD": "Pass"},
+        "assertion_failures": 0,
+    },
+    "01-testing-basics/exercises/solutions/routing-suite-spec.yaml": {
+        "status": "Fail",
+        "gates": {"DoD": "Fail"},
+        "assertion_cases": ["R-06", "R-07"],
+    },
     "worked-examples/01-deterministic-api/manifest.yaml": {
         "status": "Fail",
         "gates": {"DoD": "Fail"},
@@ -39,12 +49,12 @@ EXPECTED = {
         "status": "Fail",
         "gates": {"DoD": "Fail", "DoT": "Pass"},
     },
-    "03-the-two-gates/exercises/solutions/claimtriage-dod-manifest.yaml": {
+    "05-the-two-gates/exercises/solutions/claimtriage-dod-manifest.yaml": {
         "status": "Fail",
         "gates": {"DoD": "Fail"},
         "assertion_failures": 4,
     },
-    "06-running-it/exercises/solutions/claimtriage-manifest.yaml": {
+    "08-running-it/exercises/solutions/claimtriage-manifest.yaml": {
         "status": "Fail",
         "gates": {"DoT": "Fail"},
         "aggregate": {"required-facts-recall": 0.927},
@@ -54,6 +64,33 @@ EXPECTED = {
 }
 
 TOLERANCE = 0.001
+
+# Module 02 reads a JUnit report by level; the note and the solution quote these.
+JUNIT = ROOT / "lab" / "test-results" / "summarize_junit.py"
+JUNIT_REPORT = "02-running-a-campaign/exercises/data/claimtriage-junit.xml"
+JUNIT_EXPECTED = {
+    "totals": {"tests": 17, "passed": 13, "failures": 1, "errors": 2, "skipped": 1},
+    "levels": {"component": "failed", "integration": "incomplete", "system": "not tested"},
+}
+
+
+def junit_problems():
+    result = subprocess.run([sys.executable, str(JUNIT), JUNIT_REPORT], cwd=ROOT, capture_output=True, text=True)
+    try:
+        summary = json.loads(result.stdout)
+    except json.JSONDecodeError:
+        return [f"summarize_junit.py produced no summary\n{result.stderr}"]
+    problems = [
+        f"totals {key} {summary['totals'].get(key)}, expected {value}"
+        for key, value in JUNIT_EXPECTED["totals"].items()
+        if summary["totals"].get(key) != value
+    ]
+    problems += [
+        f"level {level} {summary['levels'][level]['status']!r}, expected {status!r}"
+        for level, status in JUNIT_EXPECTED["levels"].items()
+        if summary["levels"][level]["status"] != status
+    ]
+    return problems
 
 
 def run(manifest):
@@ -92,6 +129,11 @@ def compare(manifest, expected, report):
         if found != expected["assertion_failures"]:
             problems.append(f"{found} assertion failures, expected {expected['assertion_failures']}")
 
+    if "assertion_cases" in expected:
+        found = sorted({failure.get("case_id") for failure in report.get("assertion_failures", [])})
+        if found != sorted(expected["assertion_cases"]):
+            problems.append(f"assertion failures on {found}, expected {expected['assertion_cases']}")
+
     if "veto_cases" in expected:
         found = sorted(veto.get("case_id") for veto in report.get("vetoes", []))
         if found != sorted(expected["veto_cases"]):
@@ -113,6 +155,15 @@ def main():
         else:
             print(f"ok  {manifest}  ->  {expected['status']}")
 
+    problems = junit_problems()
+    if problems:
+        failures += 1
+        print(JUNIT_REPORT)
+        for problem in problems:
+            print(f"    {problem}")
+    else:
+        print(f"ok  {JUNIT_REPORT}  ->  system not tested")
+
     # The runner writes evidence next to each manifest; it is a run artefact.
     for directory in ROOT.rglob("evidence"):
         if directory.is_dir():
@@ -121,7 +172,7 @@ def main():
     if failures:
         print(f"\n{failures} run(s) no longer match what the course says they produce.")
         return 1
-    print(f"\nall {len(EXPECTED)} documented runs reproduce their figures")
+    print(f"\nall {len(EXPECTED) + 1} documented runs reproduce their figures")
     return 0
 
 

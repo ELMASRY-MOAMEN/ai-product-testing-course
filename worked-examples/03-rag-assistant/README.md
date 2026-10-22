@@ -63,6 +63,6 @@ Remove the `policy-change` slice entirely: the run reports **Pass**, on a 0.958 
 
 ## Related
 
-- [Thresholds, slices and vetoes](../../05-designing-evidence/thresholds-slices-vetoes.md)
-- [Building a Golden Dataset](../../05-designing-evidence/golden-datasets.md) — why a slice needs enough cases to be measurable
-- [What exactly should we evaluate](../../04-what-to-measure/evaluators-and-metrics.md)
+- [Thresholds, slices and vetoes](../../07-designing-evidence/thresholds-slices-vetoes.md)
+- [Building a Golden Dataset](../../07-designing-evidence/golden-datasets.md) — why a slice needs enough cases to be measurable
+- [What exactly should we evaluate](../../06-what-to-measure/evaluators-and-metrics.md)

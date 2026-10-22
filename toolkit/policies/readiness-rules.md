@@ -40,5 +40,5 @@ Correct outcome: `Not Ready`, with the blocker `missing approved threshold` nami
 
 ## Related
 
-- [DoT: evaluating probabilistic quality](../../03-the-two-gates/definition-of-trustworthy.md) — the ten mandatory components
+- [DoT: evaluating probabilistic quality](../../05-the-two-gates/definition-of-trustworthy.md) — the ten mandatory components
 - [Readiness checklist](../readiness-checklist.md) — the check to run before starting
